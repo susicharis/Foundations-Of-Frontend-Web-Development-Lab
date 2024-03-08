@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    
+    <style>
+
+        .h2f {
+            margin-left: 30px;
+        }
+
+
+
+
+        .lastName {
+            margin-left: 10%;
+        }
+
+        .lastNameInput {
+            margin-left: 4%;
+        }
+
+
+
+
+        .userName {
+         margin-left: 9.65%;
+           
+        }
+
+        .formUser {
+            padding-top: 3px;
+        }
+
+
+
+
+        .formPassw {
+            padding-top: 3px;
+        }
+
+        .passWord {
+            margin-left: 9.85%;
+        
+        }
+
+
+
+
+        .formBirth {
+            padding-top: 3px;
+        }
+
+        .dateBirth {
+            margin-left: 8.6%;
+        }
+
+
+
+
+        .formPlace {
+            padding-top: 2.5%;
+        }
+        
+        .placeBirth {
+            margin-left: 8.4%;
+        }
+
+
+
+
+        
+        .Options {
+            margin-top: 5px;
+            margin-left: 13.5%;
+            display: inline-block;
+           
+        }
+
+        .formGender1 {
+            margin-top: 5px;
+        }
+
+
+
+
+        .emailOne {
+            position: absolute;
+            left: 13.8%;
+        }
+
+
+
+        .formPhone{
+            margin-top: 4px;
+        }
+        
+        .phoneOne {
+            position: absolute;
+            left: 13.8%;
+            
+        }
+
+
+
+        .colorOne {
+            position: absolute;
+            left: 13.8%;
+        }
+        
+        .colorHairDiv {
+            margin-top: 4px;
+        }
+
+
+
+        .register {
+            position:absolute;
+            left:17.5%;
+        }
+
+       
+
+
+
+
+       
+        
+
+       
+
+        
+        
+       
+    </style>
+</head>
+<body>
+
+    <h2 class="h2f">International Burch Univesrity</h2>
+    <h2>REGISTRATION FORM</h2>
+
+    <form class="formFirst">
+        <label for="firstname">Firstname:</label> 
+        <label for="lastname" class="lastName">Lastname: </label>
+        <br/>
+        <input type="text" class="firstName" id="firstname" name="firstname" placeholder="Enter your firstname">
+        <input type="text" class="lastNameInput" id="lastname" name="lastname" placeholder="Enter your lastname">
+    </form>
+
+
+
+    <form class="formUser">
+        <label for="username">Username:</label>
+        <input type="text" class="userName" id="username" name="username">
+    </form>
+
+    <form class="formPassw">
+        <label for="password">Password:</label>
+        <input type="password" class="passWord" id="password" name="password" maxlength="18">
+    </form>
+
+    <form class="formBirth">
+        <label for="date">Date of Birth:</label>
+        <input type="date" class="dateBirth" id="date" name="date">
+    </form>
+
+    <form class="formPlace">
+        <label for="place">Place of Birth:</label>
+        <input type="text" class="placeBirth" id="place" name="place">
+    </form>
+
+  
+
+    <form class="formGender"> 
+        <label for="gender" style="position: absolute; margin-top: 25px;">Gender: </label>
+             
+        <div class="Options">
+            
+            <input type="radio" id="option1" name="options">
+            <label for="option1">Male</label> 
+            <br/>
+                
+            <input type="radio" id="option2" name="options">
+            <label for="option1">Female</label> 
+            <br/>  
+
+            <input type="radio" id="option3" name="options">
+            <label for="option3">Other</label>
+
+        </div>
+    </form>
+
+
+    <form class="formMail">
+
+        <label for="email">Email:</label>
+        <input type="text" class="emailOne" id="email" name="email" >
+
+    </form>
+
+    <form class="formPhone">
+        <label for="phone">Phone:</label>
+        <input type="text" class="phoneOne" id="phone" name="phone">
+        <br/>
+
+        <div class="colorHairDiv">
+            <label for="haircolor">Hair Color:</label>
+            <input type="color" class="colorOne" id="color" name="color">
+        </div>    
+
+        <br/>
+
+        <div class="NotesDiv">
+
+            <label for="notes">Notes</label>
+            <br/>
+            <textarea id="notes" name="notes" rows="4" cols="50" class="textArea"></textarea>
+
+
+        <div>           
+            <input type="checkbox" id="notifications" name="notifications">
+            <label for="notifications">Recieve notifications</label>
+        </div>
+
+        <div class="register">
+            <button>Register</button>
+            
+        </div>
+            
+
+        </div>
+
+
+
+    </form>
+
+
+
+
+    
+
+
+    
+
+    
+   
+</body>
+</html>
+
