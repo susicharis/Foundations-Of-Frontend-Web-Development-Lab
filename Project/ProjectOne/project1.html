@@ -3,19 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Back!</title>
+    <title>Portfolio - Project One </title>
 
-   <style>
-    
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
+            color: #333;
+        }
+        section p {
+            line-height: 1.5;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .profimg {
+            width: 300px;
+            height: 400px;
+        }
+
+        hr {
+            width: 400px;
+            margin-left: 1px;
+            
+        }
+
+        .h2f {
+            margin-left: 120px;
+        }
+
+        .h3f {
+            margin-left: 125px;
+        }
+
+        
+        .divisionpic {
+            width: 1100px;
+            height: 500px;
+        }
+
+        .cinemapic {
+            width: 1000px;
+            height: 500px;
+        }
+
+        .viewPone {
+            text-align: center;
+        }
 
 
-   </style>
+        .btn {
+            padding: 10px 40px 10px 40px;
+            margin-left: 73px;
+            width: 170px;
+        }
+
+        .nameText {
+            width: 163px;
+            margin-left: 21px;
+        }
+
+        .emailText {
+            width: 163px;
+            margin-left: 24px;
+        }
+
+
+    </style>
+
 
 </head>
 <body>
 
-   
-    
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="C:\xampp\htdocs\Foundations-Of-Frontend-Web-Development-Lab\Project\ProjectOne\project1.html">Portfolio - Haris Sušić</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Hardworking and Disciplined Web Developer, <br/> Football Player, Programmer, Basically best at anything.</p>
+            <img src="C:\xampp\htdocs\Foundations-Of-Frontend-Web-Development-Lab\Project\ProjectOne\images\king.jpg" alt="Profile Pic" class="profimg">
+            <p>Visit my <a href="https://github.com/susicharis/Foundations-Of-Frontend-Web-Development-Lab" target="null">GitHub</a> profile for more projects.</p>
+        </section>
+
+
+
+        <section>
+            <h2 class="h2f">Projects</h2>
+            <hr>
+
+            <article>
+                <h3 class="h3f">Project 1</h3>
+                <hr>
+                <p>I Created this AMAZING Website for my friend's server that is crushing with players called Deluxe Roleplay.</p>
+                <img src="C:\xampp\htdocs\Foundations-Of-Frontend-Web-Development-Lab\Project\ProjectOne\images\division.png" alt="Project 1" class="divisionpic">
+                <p  class="viewPone"><a href="C:\Users\Haris\Desktop\ALL\New ALL\Web Developing\Division(HTML,CSS,JS)\division.html" target="null">View Project</a></p>
+            </article>
+
+
+            <article>
+                <hr>
+                <h3 class="h3f">Project 2</h3>
+                <hr>
+                <p>I created this AMAZING Website for movie watching and trailers.</p>
+                <img src="C:\xampp\htdocs\Foundations-Of-Frontend-Web-Development-Lab\Project\ProjectOne\images\cinema.png" alt="Project 2" class="cinemapic">
+                <p class="viewPone"><a href="C:\Users\Haris\Desktop\ALL\New ALL\Web Developing\Division(HTML,CSS,JS)\division.html">View Project</a></p>
+            </article>
+        </section>
+
+
+
+        <section>
+            <h2>Contact Me</h2>
+            <form method="post">
+
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" class="nameText" id="name" name="name">
+                </div>
+
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" class="emailText" id="email" name="email">
+                </div>
+
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+
+                <button type="submit" class="btn">Send</button>
+
+            </form>
+        </section>
+    </main>
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Portfolio Website</p>
+    </footer>
 </body>
 </html>
