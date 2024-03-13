@@ -1,0 +1,47 @@
+* {
+    background-color: #85AFD4;
+    color: white;
+    
+}
+
+body {
+    
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;   
+    
+}
+
+.fpass1 {
+    padding: 5px;
+    text-align: left;
+    padding: 15px 80px 15px 20px;
+}
+
+.femail1 {
+    text-align: left;
+    padding: 15px 80px 15px 20px;
+}
+
+
+.btn1 {
+    padding: 5px 45px 5px 45px;
+    margin-left: 38px;
+    background-color: #E47272;
+    color: white;
+    border-radius: 20px;
+    margin-left: 46%;
+}
+
+
+h2, h1, p {
+    text-align: center;
+}
+
+
+
+form {
+    margin-left: 43%;
+}
+
+
