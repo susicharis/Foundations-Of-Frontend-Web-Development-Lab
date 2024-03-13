@@ -48,6 +48,7 @@ a {
 
 button {
     background-color: #E47272;
+    border-radius: 20px;
 }
 
 .formEnterNew {
