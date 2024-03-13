@@ -13,12 +13,17 @@
 
 .p1f {
     font-size: 23px;
+    text-align: center;
+    margin-right: 9.5%;
 }
 
 table {
     border-collapse: collapse;
     width: 20%;
     border: 1px solid #000;
+    position: absolute;
+    left: 40%;
+    
     
 }
 
