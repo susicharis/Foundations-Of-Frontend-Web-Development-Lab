@@ -1,10 +1,10 @@
-* {
+* { /* Everything */
     background-color: #85AFD4;
     color: white;
     
 }
 
-body {
+body { /* Body (Font,) */
     
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -12,19 +12,19 @@ body {
     
 }
 
-.fpass1 {
+.fpass1 { /* Password Form */
     padding: 5px;
     text-align: left;
     padding: 15px 80px 15px 20px;
 }
 
-.femail1 {
+.femail1 { /* Email Form */
     text-align: left;
     padding: 15px 80px 15px 20px;
 }
 
 
-.btn1 {
+.btn1 { /* Button (SUBMIT) */
     padding: 5px 45px 5px 45px;
     margin-left: 38px;
     background-color: #E47272;
@@ -34,13 +34,13 @@ body {
 }
 
 
-h2, h1, p {
+h2, h1, p { /* Header Two, One, Paragraphs */
     text-align: center;
 }
 
 
 
-form {
+form { /* Full Form */
     margin-left: 43%;
 }
 
