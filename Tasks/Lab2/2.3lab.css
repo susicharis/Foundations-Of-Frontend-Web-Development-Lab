@@ -20,7 +20,7 @@
 table { /* Table */
     border-collapse: collapse;
     width: 20%;
-    border: 1px solid #000;
+    border: 2px solid #ffff;
     position: absolute;
     left: 40%;
     
@@ -29,14 +29,14 @@ table { /* Table */
 
 tr { /* Table Row */
     border-collapse: collapse;
-    border: 1px solid #000;
+    border: 2px solid #ffff;
     padding: 10px 10px 10px 10px;
 }
 
 th, td { /* Table Head, Table Data (Everything written) */
     width: 100px; 
     height: 50px; 
-    border: 1px solid #000;
+    border: 2px solid #ffff;
     padding: 10px 10px 10px 10px;
     text-align: center;
 }
