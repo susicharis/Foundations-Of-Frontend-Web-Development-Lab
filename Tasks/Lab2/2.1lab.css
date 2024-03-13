@@ -1,0 +1,150 @@
+* {
+    background-color: #85AFD4;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    
+       
+}
+
+
+
+
+.h2f, h2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
+
+
+.firstName {
+    position: absolute;
+    right: 56%;
+}
+
+.lastName {
+    position: absolute;
+    right: 44%;
+}
+
+.lastNameInput {
+    position: absolute;
+    right: 40.3%;
+}
+
+.firstNameInput {
+    position: absolute;
+    right: 52.5%;
+}
+
+
+
+
+.userName {
+    
+    margin-left: 110%;
+    margin-bottom: 10%;
+   
+}
+
+.formUser {
+    padding-top: 3px;
+    position: absolute;
+    top: 17%;
+    left: 40%;
+}
+
+
+
+
+.formPassw {
+    padding-top: 3px;
+}
+
+.passWord {
+    margin-left: 9.85%;
+
+}
+
+
+
+
+.formBirth {
+    padding-top: 3px;
+}
+
+.dateBirth {
+    margin-left: 8.6%;
+}
+
+
+
+
+.formPlace {
+    padding-top: 2.5%;
+}
+
+.placeBirth {
+    margin-left: 8.4%;
+}
+
+
+
+
+
+.Options {
+    margin-top: 5px;
+    margin-left: 13.5%;
+    display: inline-block;
+   
+}
+
+.formGender1 {
+    margin-top: 5px;
+}
+
+
+
+
+.emailOne {
+    position: absolute;
+    left: 13.8%;
+}
+
+
+
+.formPhone{
+    margin-top: 4px;
+}
+
+.phoneOne {
+    position: absolute;
+    left: 13.8%;
+    
+}
+
+
+
+.colorOne {
+    position: absolute;
+    left: 13.8%;
+}
+
+.colorHairDiv {
+    margin-top: 4px;
+}
+
+
+
+.register {
+    position:absolute;
+    left:17.5%;
+}
+
+button {
+    background-color:#E47272 ;
+    color: white;
+    border-radius: 20px;
+}

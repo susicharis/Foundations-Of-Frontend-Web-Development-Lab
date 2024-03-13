@@ -1,0 +1,56 @@
+* {
+    background-color: #85AFD4;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+.h2f {
+    
+    font-weight: 700;
+    text-align: center;
+}
+
+.h1f {
+    margin-top: 3%;
+    font-weight: 700;
+    
+    margin-left: 37%;
+}
+
+.p1f {
+    font-size: 22px;
+    margin-left: 37%;
+}
+
+.passWord {
+    padding: 20px 300px 20px 7px;
+}
+
+.btnItself {
+    padding: 20px 60px 20px 60px;
+    
+    
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #E47272;
+}
+
+
+.btnClass {
+    margin-top: 3%;
+    margin-left: 7%;
+    
+}
+
+button {
+    background-color: #E47272;
+}
+
+.formEnterNew {
+    margin-left: 37%;
+}
+
