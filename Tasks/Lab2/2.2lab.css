@@ -1,46 +1,43 @@
-* {
+* { /* Everything */
     background-color: #85AFD4;
     color: white;
     font-family: "Lato", sans-serif;
     font-weight: 300;
 }
 
-.h2f {
-    
-    font-weight: 700;
+.h2f { /* Header Two (IBU) */
     text-align: center;
 }
 
-.h1f {
+.h1f { /* Header One (Forgot Password) */
     margin-top: 3%;
     font-weight: 700;
-    
     margin-left: 37%;
 }
 
-.p1f {
+.p1f { /* Paragraph (Please enter new Password) */
     font-size: 22px;
     margin-left: 37%;
 }
 
-.passWord {
+.passWord { /* Form Input */
     padding: 20px 300px 20px 7px;
 }
 
-.btnItself {
+.btnItself { /* Button Text */
     padding: 20px 60px 20px 60px;
     
     
 }
 
-a {
+a { /* Link Text */
     text-decoration: none;
     font-weight: 700;
     background-color: #E47272;
 }
 
 
-.btnClass {
+.btnClass { /* Whole Button */
     margin-top: 3%;
     margin-left: 7%;
     
@@ -51,7 +48,7 @@ button {
     border-radius: 20px;
 }
 
-.formEnterNew {
+.formEnterNew { /* Whole Form */
     margin-left: 37%;
 }
 
