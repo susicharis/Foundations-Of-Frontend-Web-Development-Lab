@@ -1,0 +1,147 @@
+* { /* Everything */
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+
+body { /* Body */
+    
+}
+
+@media screen and (max-width: 600px) { /* For Every User */
+
+}
+
+.topDiv { /* First Div, Used to put everything in it so it can be centered */
+   background-color: white;
+   width: 45%;
+   margin-left: auto;
+   margin-right: auto;
+   height: 100vh;
+
+}
+
+div.insideTopDiv { /* Header Div */
+    
+    background-color: #F0B27A;
+    width: 100%;
+    height: 20%;
+    
+
+}
+
+
+
+
+
+.p1f {  /* First Paragraph (Inside textFirstDiv) */
+    
+    line-height: 30px;
+    
+    
+}
+
+div.picsDiv {  /* 3X Pictures Div */
+    margin-top: 15px;
+    
+}
+
+
+.firstPic, .secondPic, .thirdPic { /* Three Pictures (inside picsDiv)*/
+    width: 240px;
+    height: 240px;
+    
+    
+}
+
+.secondPic { /* Second Pic */
+    position:relative;
+    left: 61px;
+}
+
+.thirdPic { /* Third Pic */
+    position: relative;
+    left: 120px;
+    top: 3px;
+}
+
+
+
+
+h1 {    /* New Sales Offer */
+    
+    font-size: 400%;
+    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+    font-weight: 300;
+    position:absolute;
+    left: 29%;
+    top: 12%;
+}
+
+.leavesPic { /* Header Picture */
+    height: 100%;
+    position:inherit;
+    margin-left: 81%;
+}
+
+.p2f, .p3f , .p4f { /*  All 3 Pics Text */
+    font-size: 90%;
+    line-height: 20px;
+    word-spacing: 3px;
+    
+}
+
+.p2f { /* First Picture Text */
+    text-align: center;
+    position: absolute;
+    font-size: 90%;
+    left: 28.5%;
+    
+}
+
+.p3f { /* Second Picture Text */
+    text-align: center;
+    
+}
+
+.p4f { /* Third Picture Text */
+    position:absolute;
+    text-align: center;
+    left: 60.5%;
+    bottom: 23.2%;
+}
+
+
+
+
+.p5f { /* Second Text Paragraph */
+    position: absolute;
+    top: 85%;
+    line-height: 30px;
+}
+
+
+div.footerDiv { /* Footer Div */
+    background-color: #F0B27A;
+    margin-top: 65%;
+    }
+
+
+.pLast , .pLast2 { /* Both last P */
+    text-align: center;
+    line-height: 25px;
+}
+
+.pLast { /* last Paragraph Inside Footer */
+    
+    font-size: 140%;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.pLast2 { /* last second Paragraph Inside Footer */
+
+}
