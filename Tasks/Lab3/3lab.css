@@ -6,9 +6,6 @@
     
 }
 
-body { /* Body */
-    
-}
 
 @media screen and (max-width: 600px) { /* For Every User */
 
@@ -142,6 +139,4 @@ div.footerDiv { /* Footer Div */
     
 }
 
-.pLast2 { /* last second Paragraph Inside Footer */
 
-}
