@@ -145,30 +145,56 @@ section h2, section p { /* sections header two and paragraph  */
     top: calc(187.2% + 40px); // Used for mobile devices 
 }
 
-.btn { /*  Button  */
-    padding: 10px 40px 10px 40px;
-    margin-left: 73px;
-    width: 167px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-}
-
-.btn:hover, .btnTwo:hover, .btnThree:hover{
+.btnTwo:hover, .btnThree:hover {
     transform: scale(1.1);
     background-color: orangered;
     color: white;
-}
+  }
 
-.nameText { /* name Form  */
-    width: 167px;
-    margin-left: 21px;
-    
-}
 
-.emailText { /* email Form  */
-    width: 167px;
-    margin-left: 24px;
-    
-}
+
+
+/* BootStrap - Section 3 */
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Style the form heading */
+  .text-center-mb-4 {
+    color: #efeeee;
+    margin-bottom: 30px;
+  }
+
+  /* Style form labels */
+  label {
+    font-weight: bold;
+  }
+
+  /* Style form input fields and textarea */
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Style the submit button */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px; /* Increased padding */
+    cursor: pointer;
+    width: 100%;
+  }
+
+  /* Hover effect for submit button */
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }

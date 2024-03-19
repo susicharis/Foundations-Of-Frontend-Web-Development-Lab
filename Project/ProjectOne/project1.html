@@ -64,35 +64,37 @@
 
             <br>
             <br>
+            <br>
+            <br>
 
 
-        <!-- Section Three -->    
+        <!-- Section Three - Bootstrap -->    
 
         <section>
-            <h2>Contact Me</h2>
-            <form method="post">
+            <div class="container mt-5">
+                <h2 class="text-center-mb-4">Contact Me</h2>
 
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" class="nameText" id="name" name="name">
-                </div>
+                <form>
 
-
-                <div>
+                  <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" class="emailText" id="email" name="email">
-                </div>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                  </div>
 
+                  <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter password">
+                  </div>
 
-                <div>
+                  <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
-                </div>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                  </div>
 
+                  <button type="submit" class="btn btn-primary btn-lg"><span class="badge rounded-pill bg-primary">Submit</span></button>
 
-                <button type="submit" class="btn">Send</button>
-
-            </form>
+                </form>
+              </div>
         </section>
     </main>
 
