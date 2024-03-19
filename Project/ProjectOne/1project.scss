@@ -1,0 +1,174 @@
+$primary_1: #051859;
+$primary_2: #2B2B2C;
+$myFont: Arial, sans-serif;
+
+
+/* Solo - Start */
+
+
+
+
+* { /* Everything */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body { /* Body  */
+    font-family: $myFont;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:  $primary_1;
+    
+}
+header { /* Header  */
+    background-color:$primary_2;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    
+    
+}
+
+footer { /* footer  */
+    background-color: $primary_2;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+img { /* for all the images  */
+    max-width: 100%;
+    height: auto;    
+}
+
+a {
+    text-decoration-color: white;
+    color: white;
+}
+
+hr { /* horizontal line  */
+    width: 400px;
+    margin-left: 1px;
+    
+}
+
+label {
+    color: white;
+}
+
+/* Solo - END */
+
+
+
+/* Navigation */
+
+nav ul { /* Navigation - Unordered List  */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li { /* Nav - ul - list  */
+    display: inline-block;
+    
+}
+nav ul li a { /* link at the nav ul li   */
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* Sections (Inside Sections */
+
+
+main { /* main - sections  */
+    padding: 20px;
+}
+section { /* for all the sections  */
+    margin-bottom: 30px;
+}
+section h2, section p { /* sections header two and paragraph  */
+    color:white;
+    line-height: 1.5;
+}
+
+.h2f { /* "Projects"  */
+    margin-left: 120px;
+    
+}
+
+.h3f { /* "Project 1,2"  */
+    margin-left: 125px;
+    color: white;
+}
+
+.profimg { /* profile picture  */
+    width: 300px;
+    height: 400px;
+}
+
+.divisionpic { /* Project 1 Picture  */
+    width: 1000px;
+    height: 500px;
+}
+
+.cinemapic { /* Project 2 Picture   */
+    width: 1000px;
+    height: 500px;
+}
+
+.btnTwo { /* "View Project" Button  */
+    position:absolute;
+    // top: 125.5%;
+    right: 46.4%;
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    top: calc(125.5% + 20px);
+
+}
+
+.btnThree {
+    position:absolute;
+    // top: 189.2%;
+    right: 46.4%;
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    top: calc(187.2% + 40px); // Used for mobile devices 
+}
+
+.btn { /*  Button  */
+    padding: 10px 40px 10px 40px;
+    margin-left: 73px;
+    width: 167px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover, .btnTwo:hover, .btnThree:hover{
+    transform: scale(1.1);
+    background-color: orangered;
+    color: white;
+}
+
+.nameText { /* name Form  */
+    width: 167px;
+    margin-left: 21px;
+    
+}
+
+.emailText { /* email Form  */
+    width: 167px;
+    margin-left: 24px;
+    
+}
