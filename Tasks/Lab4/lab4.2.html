@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Form</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <style>
+   body {
+  background-color: #f8f9fa; 
+}
+.profile-form-container {
+  max-width: 400px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.profile-image {
+  border-radius: 50%;
+  margin-bottom: 30px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Styling for input fields and select boxes to only show the bottom border */
+.form-control, .select-wrapper select {
+  border: 0;
+  border-bottom: 1px solid black; /* Visible underscore line */
+  border-radius: 0; /* Ensures no rounded corners for uniformity */
+  box-shadow: none; /* Removes any box shadows */
+}
+
+/* Input groups need to ensure the append doesn't have an unexpected border */
+.input-group .form-control, .input-group .input-group-text {
+  border: 0;
+  border-bottom: 1px solid black; /* Visible underscore line */
+  border-radius: 0;
+}
+.input-group .input-group-text {
+  background-color: transparent;
+}
+
+/* Styling for the select dropdown arrow */
+.select-wrapper::after {
+  content: "\f107"; /* FontAwesome down arrow icon */
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Styling for social media input groups */
+.social-group .form-control {
+  flex-grow: 1;
+  margin-right: 10px; /* Separates the social media input fields */
+}
+
+/* Removes margin for the last social input to align properly */
+.social-group .form-control:last-child {
+  margin-right: 0;
+}
+
+/* Removes the right border for the input field directly before an append group */
+.social-group > div:not(:last-child) .form-control {
+  border-right: none;
+}
+
+
+  </style>
+</head>
+<body>
+  
+<div class="container profile-form-container">
+  <form>
+    <!-- Profile Image -->
+    <div class="text-center mb-5">
+      <img src="C:\xampp\htdocs\Foundations-Of-Frontend-Web-Development-Lab\Tasks\Lab4\portrait.jpg" class="profile-image rounded-circle" alt="Profile Image">
+    </div>
+
+    <!-- Form Fields -->
+    <!-- Gender -->
+    <div class="form-group mb-3">
+      <div class="select-wrapper">
+        <select class="form-control">
+          <option>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    
+    <!-- Language -->
+    <div class="form-group mb-4">
+      <div class="select-wrapper">
+        <select class="form-control">
+          <option>Language</option>
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="french">French</option>
+        </select>
+      </div>
+    </div>
+    
+    <!-- Date of Birth -->
+    <div class="form-group mb-4">
+      <input type="text" class="form-control" placeholder="Date of Birth">
+    </div>
+    
+    <!-- Slogan -->
+    <div class="form-group mb-4">
+      <input type="text" class="form-control" placeholder="Slogan">
+    </div>
+
+    <!-- Social Media -->
+    <div class="form-row mb-4">
+      <div class="col">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Twitter">
+          <span class="input-group-text"><i class="fab fa-twitter"></i></span>
+        </div>
+      </div>
+      <div class="col">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="LinkedIn">
+          <span class="input-group-text"><i class="fab fa-linkedin-in"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Facebook">
+          <span class="input-group-text"><i class="fab fa-facebook-f"></i></span>
+        </div>
+      </div>
+      <div class="col">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Google">
+            <span class="input-group-text"><i class="fab fa-google"></i></span>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <!-- Include Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+  </html>
+  
