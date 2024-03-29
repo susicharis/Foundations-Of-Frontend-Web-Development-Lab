@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="5lab.css">
+<title>Dynamic Table</title>
+
+</head>
+<body>
+
+<div id="modal" style="display:none; position:fixed; z-index:1; left:0; top:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5);">
+  <div style="background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%;">
+    <span id="modal-text">You clicked on the user: </span>
+    <button onclick="document.getElementById('modal').style.display='none'">Close</button>
+  </div>
+</div>
+
+<table id="data-table">
+  <thead>
+    <tr>
+      <th onclick="sortTable(0)">ID <span class="sort-icon">&#9650;</span></th>
+      <th onclick="sortTable(1)">Name <span class="sort-icon">&#9650;</span></th>
+      <th onclick="sortTable(2)">Country <span class="sort-icon">&#9650;</span></th>
+      <th onclick="sortTable(3)">Email <span class="sort-icon">&#9650;</span></th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Table rows  -->
+  </tbody>
+</table>
+
+<script>
+// Example data
+const data = [
+  { id: 1, name: 'John Doe', country: 'Afghanistan', email: 'john1@example.com' },
+  { id: 2, name: 'Jane Smith', country: 'Albania', email: 'jane2@example.com' },
+  { id: 3, name: 'Jim Brown', country: 'Algeria', email: 'jim3@example.com' },
+  { id: 4, name: 'Jake White', country: 'Andorra', email: 'jake4@example.com' },
+  { id: 5, name: 'Julie Black', country: 'Angola', email: 'julie5@example.com' },
+  { id: 6, name: 'Jennifer Green', country: 'Antigua and Barbuda', email: 'jennifer6@example.com' },
+];
+
+let currentSortColumn = -1;
+let sortAscending = true;
+
+function generateTable() {
+  const tbody = document.getElementById('data-table').getElementsByTagName('tbody')[0];
+  tbody.innerHTML = ''; // Clear existing table rows
+
+  // Populate table with data
+  data.forEach(item => {
+    const row = tbody.insertRow();
+
+    // ID cell
+    row.insertCell().innerText = item.id;
+    
+    
+    const nameCell = row.insertCell();
+    const img = document.createElement('img');
+    img.src = 'women.jfif';
+    img.alt = 'User Image';
+    img.style.width = '30px'; 
+    img.style.height = '30px'; 
+    img.style.borderRadius = '50%'; 
+    img.style.objectFit = 'cover'; 
+    img.style.marginRight = '10px'; 
+    img.style.verticalAlign = 'middle'; 
+
+    nameCell.appendChild(img);
+    nameCell.append(item.name);
+    
+    
+    row.insertCell().innerText = item.country;
+    
+    // Email cell
+    row.insertCell().innerText = item.email;
+
+    // Action cell with button
+    const actionCell = row.insertCell();
+    const actionButton = document.createElement('button');
+    actionButton.innerText = 'Click';
+    actionButton.onclick = function() {
+      document.getElementById('modal').style.display = 'block';
+      document.getElementById('modal-text').innerText = `You clicked on the user: ${item.name}`;
+    };
+    actionCell.appendChild(actionButton);
+  });
+}
+
+
+function sortTable(columnIndex) {
+  const getCellValue = (row, index) => row.cells[index].innerText || row.cells[index].textContent;
+
+  if (currentSortColumn === columnIndex) {
+    sortAscending = !sortAscending;
+  } else {
+    currentSortColumn = columnIndex;
+    sortAscending = true;
+  }
+
+  const table = document.getElementById('data-table');
+  Array.from(table.querySelectorAll('span.sort-icon'))
+    .forEach(icon => icon.innerHTML = '&#9650;');
+  table.querySelectorAll('th span.sort-icon')[columnIndex].innerHTML = sortAscending ? '&#9660;' : '&#9650;';
+
+  const rowsArray = Array.from(table.getElementsByTagName('tbody')[0].rows);
+  rowsArray.sort((rowA, rowB) => {
+    const cellA = getCellValue(rowA, columnIndex);
+    const cellB = getCellValue(rowB, columnIndex);
+
+    const compare = cellA.localeCompare(cellB, undefined, { numeric: true });
+
+    return sortAscending ? compare : -compare;
+  });
+
+ 
+  rowsArray.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row)); // Re-append rows in sorted order
+}
+
+// Initialize table
+generateTable();
+</script>
+
+</body>
+</html>
+
