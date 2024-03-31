@@ -1,0 +1,381 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("images/backpic.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* Nav Bar */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+/* Header */
+header {
+  background-color: #00FFFF;
+  color: #2f2f2f;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Section One */
+h2 {
+  position: absolute;
+  font-size: 1.5rem;
+  color: white;
+  top: 34%;
+  left: 19.7%;
+}
+
+.h1-first {
+  position: absolute;
+  font-size: 4rem;
+  color: #00FFFF;
+  top: 37%;
+  left: 19.6%;
+}
+
+h3 {
+  color: white;
+  position: absolute;
+  font-size: 1rem;
+  left: 19.6%;
+  top: 47%;
+  font-style: italic;
+}
+
+.p1 {
+  position: absolute;
+  color: white;
+  line-height: 1.5;
+  left: 19.6%;
+  top: 55%;
+}
+
+.btn-learn-more {
+  background-color: #00FFFF;
+  color: rgb(68, 66, 66);
+  padding: 6px 14px;
+  font-size: 1.5vh;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 2vh;
+}
+
+.btn-learn-more:hover, .btn-view-project1:hover, .btn-view-project2:hover {
+  background-color: white;
+  color: black;
+}
+
+hr.style-one {
+  width: 260px;
+  margin-left: 19.5%;
+  margin-top: 48vh;
+  border: none;
+  height: 2px;
+  background-color: #00FFFF;
+}
+
+.image-of-me {
+  width: 50vh;
+  height: 50vh;
+  position: absolute;
+  left: 55%;
+  top: 23%;
+  border: 2px solid #00FFFF;
+  border-radius: 8vh;
+}
+
+/* Section Two */
+.p2 {
+  color: white;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  font-size: 220%;
+}
+
+.style-two {
+  margin-top: 58vh;
+  margin-left: 89.5vh;
+  width: 200px;
+  border: none;
+  height: 2px;
+  background-color: #00FFFF;
+}
+
+/* First div - first project */
+.h1-second {
+  color: #00FFFF;
+  position: absolute;
+  top: 130vh;
+  left: 22vh;
+  font-weight: 800;
+}
+
+.p3 {
+  color: white;
+  position: absolute;
+  line-height: 2;
+  top: 135vh;
+  left: 22vh;
+}
+
+.image-p-one {
+  width: 80vh;
+  height: 50vh;
+  position: absolute;
+  top: 120vh;
+  right: 10vh;
+  border: 2px solid #00FFFF;
+  border-radius: 4vh;
+}
+
+.btn-view-project1 {
+  position: absolute;
+  top: 157vh;
+  left: 80vh;
+  background-color: #00FFFF;
+  padding: 6px 14px;
+  font-size: 1.5vh;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Second di - second project */
+.h1-third {
+  color: #00FFFF;
+  position: absolute;
+  top: 210vh;
+  left: 22vh;
+  font-weight: 800;
+}
+
+.p4 {
+  color: white;
+  position: absolute;
+  line-height: 2;
+  top: 215vh;
+  left: 22vh;
+}
+
+.image-p-two {
+  width: 80vh;
+  height: 50vh;
+  position: absolute;
+  top: 200vh;
+  right: 10vh;
+  border: 2px solid #00FFFF;
+  border-radius: 4vh;
+}
+
+.btn-view-project2 {
+  position: absolute;
+  top: 238vh;
+  left: 80vh;
+  background-color: #00FFFF;
+  padding: 6px 14px;
+  font-size: 1.5vh;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Section Three */
+.container {
+  width: 75vh;
+  margin: 0 auto;
+  position: absolute;
+  top: 270vh;
+  left: 0;
+  right: 0;
+}
+
+label {
+  font-weight: bold;
+  color: #00FFFF;
+}
+
+input[type=email],
+input[type=password],
+textarea {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+button[type=submit] {
+  background-color: #00FFFF;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button[type=submit]:hover {
+  background-color: rgb(45, 48, 45);
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  background-color: #00FFFF;
+  color: #474545;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 100%;
+}
+
+/* ----------------------------------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  background-color: white;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#modalToggle:checked ~ .modal {
+  display: flex;
+}
+
+.label-container {
+  text-align: center;
+  margin-top: 1px;
+}
+
+/* Inspect element - FOR MOBILE */
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 90%;
+    top: 34%;
+    left: 5%;
+  }
+  .h1-first {
+    font-size: 2rem;
+    left: 5%;
+  }
+  h3 {
+    top: 44%;
+    left: 5%;
+  }
+  hr.style-one {
+    margin-top: 45vh;
+    margin-left: 5%;
+    width: 50vh;
+  }
+  .image-of-me {
+    width: 15vh;
+    height: 15vh;
+    left: 62%;
+    top: 32%;
+    border-radius: 3vh;
+  }
+  .p1 {
+    line-height: 1.5;
+    text-align: center;
+    top: 55%;
+    left: 23%;
+  }
+  .p2 {
+    top: 102%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    font-size: 220%;
+  }
+  .h1-second {
+    top: 115vh;
+    left: 18vh;
+  }
+  .image-p-one {
+    width: 40vh;
+    height: 25vh;
+    right: 8.2vh;
+  }
+  .p3 {
+    line-height: 1.5;
+    top: 148vh;
+    left: 7.5vh;
+    width: 350px;
+  }
+  footer {
+    margin-top: 400%;
+  }
+  .btn-view-project1 {
+    position: absolute;
+    top: 182vh;
+    left: 21.5vh;
+  }
+  .h1-third {
+    top: 193vh;
+    left: 15.5vh;
+  }
+  .p4 {
+    width: 430px;
+    line-height: 1.5;
+    top: 227vh;
+    left: 3vh;
+  }
+  .image-p-two {
+    width: 40vh;
+    height: 25vh;
+    right: 8.2vh;
+  }
+  .btn-view-project2 {
+    top: 258vh;
+    left: 21.5vh;
+  }
+  .modal {
+    width: 480px;
+  }
+  .container {
+    max-width: 460px;
+  }
+}/*# sourceMappingURL=new_project.css.map */
