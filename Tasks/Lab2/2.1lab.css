@@ -1,6 +1,7 @@
 * {
-    
+    background-color: #85AFD4;
     font-family: "Lato", sans-serif;
+    color: white;
     margin: 0;
     padding: 0;
     
@@ -198,5 +199,9 @@ h1 {
 .btn1 {
     position: absolute;
     top: 75%;
-    left: 56.5%;
+    left: 53.5%;
+    background-color: #E47272;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
 }
