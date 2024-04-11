@@ -205,3 +205,8 @@ h1 {
     padding: 10px 30px 10px 30px;
     border-radius: 20px;
 }
+
+a {
+    text-decoration: none;
+    background-color: #E47272;;
+}
