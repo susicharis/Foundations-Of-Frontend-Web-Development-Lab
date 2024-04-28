@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<!-- Uključivanje jQuery biblioteke -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="harke2.css"> 
+
+
+</head>
+<body>
+    
+    <div id="modal">
+        <div>
+            <span>You clicked on the user! </span>
+            <button onclick="document.getElementById('modal').style.display='none'"></button>
+        </div>
+    </div>
+
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">ID <span class="sort-icon">&#9650;</span> </th>
+                <th onclick="sortTable(1)">Name <span class="sort-icon">&#9650;</span></th>
+                <th onclick="sortTable(1)">Country <span class="sort-icon">&#9650;</span></th>
+                <th onclick="sortTable(1)">Email <span class="sort-icon">&#9650;</span></th>
+            </tr>
+        </thead>
+    </table>
+
+
+    
+<!-- JavaScript kod -->
+<script>
+
+    const data = [
+        {id: 1, name:'Haris Susic', country:'Bosnia', email:'ytharke@gmail.com'}, 
+        {id: 2, name:'Haris Susic', country:'Bosnia', email:'ytharke@gmail.com'}, 
+        {id: 3, name:'Haris Susic', country:'Bosnia', email:'ytharke@gmail.com'}, 
+        {id: 4, name:'Haris Susic', country:'Bosnia', email:'ytharke@gmail.com'}, 
+        {id: 5, name:'Haris Susic', country:'Bosnia', email:'ytharke@gmail.com'}, 
+        {id: 6, name:'Haris Susic', country:'Bosnia', email:'ytharke@gmail.com'}, 
+    ];
+
+    let currentSortColumn = -1;
+    let sortAscending = true;
+
+    function generateTable() {
+        const tbody = document.getElementById('data-table').getElementByTagName('tbody')[0];
+        tbody.innerHTML = '';
+    }
+
+     
+    
+</script>
+
+</body>
+</html>
