@@ -1,9 +1,484 @@
 * {
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background-image: url("images/backpic.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  
+  /* Nav Bar */
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  /* Header */
+  header {
+    background-color: #00FFFF;
+    color: #2f2f2f;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  /* Section One */
+  h2 {
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    top: 34%;
+    left: 19.7%;
+  }
+  
+  .h1-first {
+    position: absolute;
+    font-size: 4rem;
+    color: #00FFFF;
+    top: 37%;
+    left: 19.6%;
+  }
+  
+  h3 {
+    color: white;
+    position: absolute;
+    font-size: 1rem;
+    left: 19.6%;
+    top: 47%;
+    font-style: italic;
+  }
+  
+  .p1 {
+    position: absolute;
+    color: white;
+    line-height: 1.5;
+    left: 19.6%;
+    top: 55%;
+  }
+  
+
+  
+  hr.style-one {
+    width: 260px;
+    margin-left: 19.5%;
+    margin-top: 48vh;
+    border: none;
+    height: 2px;
+    background-color: #00FFFF;
+  }
+  
+  .image-of-me {
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    left: 55%;
+    top: 23%;
+    border: 2px solid #00FFFF;
+    border-radius: 8vh;
+  }
+  
+  
+
+
+  /* Project Two Updates */
+
+
+
+    /* First Requirement */
+
+    .container { /* Everything */ 
+      position: absolute;
+      top: 105%;
+      min-height:100vh ; 
+  }
+  
+  .container h1 { /* "HARKE - Gallery" */ 
+      font-size: 40px;
+      font-weight: normal;
+      padding: 15px;
+      color: black;
+      background-color: #00FFFF;
+      margin-left: 40%;
+      text-align: center;      
+      width: 20%;
+      text-transform: capitalize;
+  }
+  
+  .container .image-container { /* Div Inside a DIV - image-container */ 
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      pad: 10px;
+  }
+  
+  .container .image-container .image { /* Images, style for images */
+      height: 350px;
+      width: 450px;
+      border: 5px solid #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,.1);
+      overflow: hidden;
+      cursor: pointer;
+  }
+  
+  .container .image-container .image img { /* Inside Border Pic*/
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: .2s linear ;
+  }
+  
+  .container .image-container .image:hover img { /* When Cursor on image */
+      transform: scale(1.2);
+  }
+  
+  .container .popup-image { /* popup */
+      position: fixed;
+      top: 0; left: 0;
+      background: rgba(0,0,0,.9);
+      height: 100%;
+      width: 100%;
+      z-index: 100;
+      display:none ;
+  
+  }
+  
+  .container .popup-image span { /* X for exiting Image */
+      position: absolute;
+      top: 0; right: 10px;
+      font-size: 60px;
+      font-weight: bolder;
+      color: #fff;
+      cursor: pointer;
+      z-index: 100;
+  }
+  
+  .container .popup-image img { /* Image when popped */
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      border: 5px solid #fff;
+      border-radius: 5px;
+      width: 750px;
+      object-fit: cover;
+  }
+  
+  
+
+
+
+
+  /* Second Requirement */
+
+.content-toggle { /* Div For ALL Of Below */ 
+  position: absolute;
+  top: 215%;
+}
+.content-section { /* Section for h2 and p */ 
+  margin-bottom: 20px;
 }
 
-body {
-    background-color: blueviolet;
+.hidden { /* When clicked, its hidden */
+  display: none;
+}
+
+.second-req-button { /* Button - FAQ */
+  background-color: #00FFFF;
+  color: rgb(68, 66, 66);
+  padding: 120px 368px;
+  font-size: 10.5vh;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  
+}
+
+.second-req-button:hover { /* When cursor on it */ 
+  background-color: white;
+  color: black;
+}
+
+.inside-h2-first{ 
+  position: absolute;
+  top: 1%;
+  left: 105%;
+  width: 98%;
+}
+.inside-p1 {
+  position: absolute;
+  top: 12%;
+  left: 105%;
+  color: white;
+  width: 98%;
+}
+.inside-h2-second {
+  position: absolute;
+  top: 37%;
+  left: 105%;
+  width: 98%;
+}
+.inside-p2 {
+  position: absolute;
+  top: 48%;
+  left: 105%;
+  color: white;
+  width: 98%;
+}
+
+
+
+
+
+
+/* Third Requirement */
+
+#fontToggle { /* Button */
+  position: absolute;
+  left: 19.5%;
+  top: 64.5%;
+}
+
+#fontToggle:hover { /* When cursor on it */ 
+  background-color: white;
+  color: black;
+}
+
+#fontToggle { /* Button - Toggle Font Size */
+  background-color: #00FFFF;
+  color: rgb(68, 66, 66);
+  padding: 6.5px 15px;
+  font-size: 1.5vh;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  
+}
+
+/* Define italic font style */
+.italic-font {
+  font-size: 20px;
+}
+
+
+
+
+
+/* Fourth Requirement */
+
+.accordion { /* What is inside when clicked */
+    background-color: #2f2f2f;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 70%;
+    left: 15%;
+    position: absolute;
+    top: 255%;
+  }
+  
+
+  
+  .accordion .accordion-item .accordion-header { /* Header */ 
+    background-color: #2f2f2f;
+    padding: 10px;
+    cursor: pointer;
+    color: #00FFFF;
+    text-align: center;
+  }
+  
+  .accordion .accordion-item .accordion-content { /* Text Unutar - lista stvari */
+    padding: 10px;
+    display: none;
+    text-align: center;
+  }
+
+
+
+
+
+  /* -------------------------------------- MOBILE RESPONSIVE  -------------------------------------------------- */
+  @media only screen and (max-width: 480px) {
+    h2 {
+      position: absolute;
+      font-size: 1.5rem;
+      color: white;
+      top: 34%;
+      left: 6.7%;
+    }
+
+    .h1-first {
+      left: 6.7%;
+      top: 39%;
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      left: 6.7%;
+      top: 49%;
+    }
+
+    hr.style-one {
+      margin-left: 6.7%;
+      width: 46%;
+    }
+
+    .p1 {
+      top: 56%;
+      left: 6.7%;
+    }
+
+    #fontToggle {
+      top: 72%;
+      left: 6.7%;
+    }
+
+    .image-of-me {
+      width: 150px;
+      height: 150px;
+      left: 66%;
+      top: 31%;
+    }
+
+    .container h1 {
+      width: 80%;
+      margin-left: 11%;
+    }
+
+    .container {
+      top: 100%;
+    }
+
+    .container .image-container { /* Div Inside a DIV - image-container */ 
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: center;
+      pad: 10px;
+  }
+  
+  .container .image-container .image { /* Images, style for images */
+      height: 150px;
+      width: 150px;
+      border: 5px solid #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,.1);
+      overflow: hidden;
+      cursor: pointer;
+  }
+  
+  .container .image-container .image img { /* Inside Border */
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: .2s linear ;
+  }
+  
+  .container .image-container .image:hover img { /* When Cursor on image */
+      transform: scale(1.2);
+  }
+  
+  .container .popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.9);
+    z-index: 100;
+    display: none;
+  }
+
+  .container .popup-image span {
+    position: absolute;
+    top: 32%;
+    left: 58%;
+    font-size: 40px; 
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .container .popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 25%; 
+    max-width: 90%; 
+    max-height: 90vh; 
+    object-fit: cover;
+  }
+
+
+
+
+
+
+
+  .content-toggle { /* Div For ALL Of Below */ 
+    position: absolute;
+    top: 240%;
+    left: 4%;
+  }
+  
+  
+  .second-req-button { /* Button - FAQ */
+    padding: 60px 160px;
+  }
+  
+  
+  .inside-h2-first{ 
+    top: 110%;
+    left: 22%;
+    width: 98%;
+  }
+  .inside-p1 {
+    top: 127%;
+    left: 0%;
+    width: 95%;
+  }
+  .inside-h2-second {
+    top: 222%;
+    left: 3.5%;
+    width: 96%;
+  }
+  .inside-p2 {
+    top: 239%;
+    left: 0%;
+    width: 95%;
+  }
+
+
+
+
+
+
+  .accordion { /* What is inside when clicked */
+    margin-bottom: 10px;
+    width: 70%;
+    left: 15%;
+    position: absolute;
+    top: 375%;
+  }
+  
+
+  
+ 
+
+
+
 }
