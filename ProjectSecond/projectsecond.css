@@ -71,7 +71,7 @@
   hr.style-one {
     width: 260px;
     margin-left: 19.5%;
-    margin-top: 48vh;
+    margin-top: 46vh;
     border: none;
     height: 2px;
     background-color: #00FFFF;
@@ -94,7 +94,7 @@
 
 
 
-    /* First Requirement */
+    /* First Requirement ======================================================================== */
 
     .container { /* Everything */ 
       position: absolute;
@@ -178,7 +178,7 @@
 
 
 
-  /* Second Requirement */
+  /* Second Requirement ==================================================================== */
 
 .content-toggle { /* Div For ALL Of Below */ 
   position: absolute;
@@ -241,7 +241,7 @@
 
 
 
-/* Third Requirement */
+/* Third Requirement ======================================================================== */
 
 #fontToggle { /* Button */
   position: absolute;
@@ -275,7 +275,7 @@
 
 
 
-/* Fourth Requirement */
+/* Fourth Requirement ======================================================================== */
 
 .accordion { /* What is inside when clicked */
     background-color: #2f2f2f;
@@ -307,11 +307,148 @@
   }
 
 
+  /* Eighth Requirement ======================================================================== */
 
+  .buttons {
+    margin: 50px;
+  }
+
+  .buttons button {
+    background: #00FFFF;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .toastrBut {
+    position: absolute;
+    left: 18.9%;
+    top: 70%;
+  }
+
+  .toastrBut2 {
+    position: absolute;
+    left: 26.9%;
+    top: 70%;
+  }
+
+  #toastBox {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .toast {
+    width: 400px;
+    height: 80px;
+    background: white;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0 0 20px rgba(6, 180, 171, 0.3);
+    display: flex;
+    align-items: center;
+  }
+
+  .toast i { /* Editing Icons inside */ 
+    margin: 0 20px;
+    font-size: 35px;
+    color:#00FFFF;
+  }
+
+ 
+
+/* Nineth Requirement ======================================================================== */
+
+  nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color:#00FFFF;
+    color: black;
+}
+
+
+
+/* Fifth Requirement ======================================================================== */
+
+
+#contactForm {
+  position: absolute;
+  top: 275%;
+  left: 45%;
+}
+
+label {
+  color: white;
+}
+
+input {
+  padding: 10px 12px;
+  width: 95%;
+  
+}
+
+.btnForm {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  background-color: #00FFFF;
+  margin-top: 5px;
+  width: 95%;
+}
+
+
+
+
+#password-strength-container {
+  width: 20%;
+  background: #ddd;
+  height: 5px;
+  margin: 2rem;
+  display: flex;
+}
+
+#password-strength {
+  height: 5px;
+  width: 0%;
+}
+
+.strength-weak {
+  background-color: red !important;
+}
+
+.strength-medium {
+  background-color: orange !important;
+}
+
+.strength-strong {
+  background-color: green !important;
+}
 
 
   /* -------------------------------------- MOBILE RESPONSIVE  -------------------------------------------------- */
   @media only screen and (max-width: 480px) {
+    /* Odmah pocetni Naslovi */
     h2 {
       position: absolute;
       font-size: 1.5rem;
@@ -319,57 +456,56 @@
       top: 34%;
       left: 6.7%;
     }
-
     .h1-first {
       left: 6.7%;
       top: 39%;
       font-size: 2.5rem;
     }
-
     h3 {
       left: 6.7%;
       top: 49%;
     }
 
+    /* Plava Linija */
     hr.style-one {
       margin-left: 6.7%;
       width: 46%;
+      margin-top: 48%;
     }
-
+    /* Prvi Paragraph - Experience in prog... */
     .p1 {
       top: 56%;
       left: 6.7%;
     }
-
+    /* Toggle Bigger Font */
     #fontToggle {
       top: 72%;
       left: 6.7%;
     }
-
+    /* First Image - Potkosulja */
     .image-of-me {
       width: 150px;
       height: 150px;
       left: 66%;
       top: 31%;
     }
-
+    /* HARKE - Gallery */
     .container h1 {
       width: 80%;
       margin-left: 11%;
     }
 
+    /* Slike za Interactive Gallery */
     .container {
       top: 100%;
     }
-
     .container .image-container { /* Div Inside a DIV - image-container */ 
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
       justify-content: center;
       pad: 10px;
-  }
-  
+  } 
   .container .image-container .image { /* Images, style for images */
       height: 150px;
       width: 150px;
@@ -378,18 +514,15 @@
       overflow: hidden;
       cursor: pointer;
   }
-  
   .container .image-container .image img { /* Inside Border */
       height: 100%;
       width: 100%;
       object-fit: cover;
       transition: .2s linear ;
   }
-  
   .container .image-container .image:hover img { /* When Cursor on image */
       transform: scale(1.2);
   }
-  
   .container .popup-image {
     position: fixed;
     top: 0;
@@ -398,7 +531,6 @@
     z-index: 100;
     display: none;
   }
-
   .container .popup-image span {
     position: absolute;
     top: 32%;
@@ -409,7 +541,6 @@
     cursor: pointer;
     z-index: 100;
   }
-
   .container .popup-image img {
     position: absolute;
     top: 50%;
@@ -429,18 +560,16 @@
 
 
 
+
+
   .content-toggle { /* Div For ALL Of Below */ 
     position: absolute;
     top: 240%;
     left: 4%;
-  }
-  
-  
+  }  
   .second-req-button { /* Button - FAQ */
     padding: 60px 160px;
   }
-  
-  
   .inside-h2-first{ 
     top: 110%;
     left: 22%;
@@ -467,6 +596,7 @@
 
 
 
+
   .accordion { /* What is inside when clicked */
     margin-bottom: 10px;
     width: 70%;
@@ -481,4 +611,28 @@
 
 
 
-}
+ 
+
+
+/* Forma Nova */
+  #contactForm {
+    position: absolute;
+    top: 430%;
+    left: 22%;
+  }
+
+
+/* Toastr, Success i Error messages */
+  .toastrBut {
+    position: absolute;
+    left: 4.3%;
+    top: 78%;
+  }
+
+  .toastrBut2 {
+    position: absolute;
+    left: 38.3%;
+    top: 78%;
+  }
+
+} 

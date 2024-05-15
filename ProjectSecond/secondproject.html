@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second Project</title>
-    <link rel="stylesheet" type="text/css" href="projectsecond.css">
-    <link rel="stylesheet" href="secondp.js">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"> <!-- Toastr Implementation -->
+    <link rel="stylesheet" type="text/css" href="projectsecond.css"> <!-- CSS Implementation -->
+    <link rel="stylesheet" href="secondp.js"> <!-- my JS Implementation -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
 
-<!-- Header -->
+<!-- Header --> <!-- Nineth Requirement -->
 <header>
     <nav>
         <ul>
             
-            <li>Portfolio - Haris Sušić</li>
+            <li><a href="#galleryid">Gallery</a></li>
+            <li><a href="#FAQid">FAQ</a></li>
+            <li><a href="#coursesid">Courses</a></li>
             
         </ul>
     </nav>
@@ -58,7 +63,7 @@
     <h1>HARKE - Gallery</h1>
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-    <div class="image-container">
+    <div class="image-container" id="galleryid">
         <div class="image">
           <img src="images/picone.PNG" alt="first-pic">
         </div>
@@ -67,7 +72,7 @@
           <img src="images/pictwo.PNG" alt="second-pic"> 
         </div>
 
-        <div class="image">
+        <div class="image" >
           <img src="images/picthree.PNG" alt="">
         </div>
 
@@ -107,7 +112,7 @@
 <!-- Second Requirement -->
 
 <div class="content-toggle">
-    <button class="second-req-button" data-target="section1">FAQ</button>
+    <button class="second-req-button" data-target="section1" id="FAQid">FAQ</button>
     <section id="section1" class="content-section">
             <h2 class="inside-h2-first">What is a Portfolio?</h2>
             <p class="inside-p1">A portfolio is a collection of work samples or projects that showcases an individual's skills,
@@ -132,8 +137,8 @@
 
 <div class="accordion">
     <div class="accordion-item">
-      <div class="accordion-header">My Course Products</div>
-      <div class="accordion-content">
+      <div class="accordion-header" id="coursesid">My Course Products</div>
+      <div class="accordion-content" >
         <p>Introduction To Machine Learning <br> 
         Creative Writing Workshop <br>
         Financial Literacy <br>
@@ -153,6 +158,51 @@
 
 
 
+  <!-- Eighth Requirement -->
+
+  <div class="buttons">
+
+    <button onclick="showToast(successMsg)" class="toastrBut">Success</button>
+    <button onclick="showToast(errorMsg)" class="toastrBut2">Error</button>
+
+  </div>
+
+  <div id="toastBox"></div>
+
+
+<!-- Fifth Requirement -->
+
+<form id="contactForm">
+  <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+  </div>
+
+  <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+  </div>
+
+  <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+  </div>
+
+  
+
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+</div>
+
+
+
+  <button type="submit" class="btnForm">Submit</button>
+
+</form>
+
+<div id="responseMessage"></div> <!-- For seventh requirement, not working-->
+
 
 
 </main>
@@ -160,9 +210,14 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery Implementation -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap Implementation -->
     <script src="secondp.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="https://kit.fontawesome.com/2e1c765023.js" crossorigin="anonymous"></script> <!-- Toastr Icon -->
 </body>
 </html>
