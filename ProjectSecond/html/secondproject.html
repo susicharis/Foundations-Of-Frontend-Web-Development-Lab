@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Project</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"> <!-- Toastr Implementation -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> <!-- jQuery CSS -->
+    <link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\Foundations-Of-Frontend-Web-Development-Lab\ProjectSecond\assets\css\projectsecond.css"> <!-- CSS Implementation -->
+
+  
+</head>
+
+
+<body>
+
+<!-- Header --> <!-- Nineth Requirement ================================================================================================== -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="C:\xampp\htdocs\Foundations-Of-Frontend-Web-Development-Lab\ProjectSecond\html\secondproject.html">Home</a></li>
+            <li><a href="#galleryid">Gallery</a></li>
+            <li><a href="#FAQid">FAQ</a></li>
+            <li><a href="#coursesid">Courses</a></li>
+            <li><a href="C:\xampp\htdocs\Foundations-Of-Frontend-Web-Development-Lab\ProjectSecond\html\projects.html">Projects</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Main -->
+<main>
+
+ 
+    
+<!-- Section One-->
+<section>
+        <h2>Hi, my name is</h2>
+        <h1 class="h1-first">Haris Sušić</h1>
+        <h3>Fullstack Developer</h3>
+
+        <hr>
+        <hr class="style-one">
+
+        <div class="p1">
+            <p>High level experience in web design <br>
+               and development knowledge producing <br>
+               quality work and experience.</p>   
+        </div>
+
+        <div class="first-image">
+            <img src="C:\xampp\htdocs\Foundations-Of-Frontend-Web-Development-Lab\ProjectFirst\images\king.jpg" class="image-of-me">
+        </div>
+</section>
+
+
+<!-- PROJECT 2 UPDATES -->
+
+<!-- First Requirement ================================================================================================== -->
+
+<div class="container">
+
+    <h1>HARKE - Gallery</h1>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <div class="image-container" id="galleryid">
+        <div class="image">
+          <img src="C:/xampp/htdocs/Foundations-Of-Frontend-Web-Development-Lab/ProjectSecond/pictures/images/picone.PNG" alt="first-pic">
+        </div>
+
+        <div class="image">
+          <img src="C:/xampp/htdocs/Foundations-Of-Frontend-Web-Development-Lab/ProjectSecond/pictures/images/pictwo.PNG" alt="second-pic"> 
+        </div>
+
+        <div class="image" >
+          <img src="C:/xampp/htdocs/Foundations-Of-Frontend-Web-Development-Lab/ProjectSecond/pictures/images/picthree.PNG" alt="">
+        </div>
+
+        <div class="image">
+          <img src="C:/xampp/htdocs/Foundations-Of-Frontend-Web-Development-Lab/ProjectSecond/pictures/images/picfour.PNG" alt="">
+        </div>
+
+        <div class="image">
+          <img src="C:/xampp/htdocs/Foundations-Of-Frontend-Web-Development-Lab/ProjectSecond/pictures/images/picfive.PNG" alt="">
+        </div>
+
+        <div class="image">
+          <img src="C:/xampp/htdocs/Foundations-Of-Frontend-Web-Development-Lab/ProjectSecond/pictures/images/picsix.PNG" alt="">
+        </div>
+
+        <div class="image">
+          <img src="C:/xampp/htdocs/Foundations-Of-Frontend-Web-Development-Lab/ProjectSecond/pictures/images/picseven.PNG" alt="">
+        </div>
+
+        <div class="image">
+          <img src="C:/xampp/htdocs/Foundations-Of-Frontend-Web-Development-Lab/ProjectSecond/pictures/images/piceight.PNG" alt="">
+        </div>
+
+        <!-- Popup -->
+        <div class="popup-image">
+            <span>&times; </span>
+            <img src="images/pictwo.PNG" alt="">
+        </div>
+    
+    </div> <!-- image-container -->
+</div> <!-- container -->
+
+
+
+
+
+<!-- Second Requirement ================================================================================================== -->
+
+<div class="content-toggle">
+    <button class="second-req-button" data-target="section1" id="FAQid">FAQ</button>
+    <section id="section1" class="content-section">
+            <h2 class="inside-h2-first">What is a Portfolio?</h2>
+            <p class="inside-p1">A portfolio is a collection of work samples or projects that showcases an individual's skills,
+             accomplishments, and experiences, typically related to their profession or field of interest 
+             A portfolio is a collection of work samples or projects that showcases an individual's skills, 
+             accomplishments, and experiences, typically related to their profession or field of interest.</p>
+
+            <h2 class="inside-h2-second">Why is having a portfolio important?</h2>
+            <p class="inside-p2">Having a portfolio is important because it provides tangible evidence of your capabilities, helps you 
+            stand out to potential employers or clients, and allows you to demonstrate your skills and expertise in a visually appealing manner.
+            Having a portfolio is important because it provides tangible evidence of your capabilities, helps you stand out to potential employers or clients,
+             and allows you to demonstrate your skills and expertise in a visually appealing manner.</p>    
+    </section>
+</div>
+
+<!-- Third Requirement ================================================================================================== -->
+
+<button id="fontToggle">Toggle Bigger Font</button>
+
+
+<!-- Fourth Requirement ================================================================================================== -->
+
+<div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header" id="coursesid">My Course Products</div>
+      <div class="accordion-content" >
+        <p>Introduction To Machine Learning <br> 
+        Creative Writing Workshop <br>
+        Financial Literacy <br>
+        Introduction to Astrophysics</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">Other Products</div>
+      <div class="accordion-content">
+        <p>Football Manager <br>
+        Basketball Manager <br>
+        Cricket Manager <br>
+        Fitness Personal Trainer</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Eighth Requirement ================================================================================================== -->
+
+  <div class="buttons">
+    <button onclick="showToast(successMsg)" class="toastrBut">Success</button>
+    <button onclick="showToast(errorMsg)" class="toastrBut2">Error</button>
+  </div>
+
+  <div id="toastBox"></div>
+
+
+<!-- Fifth Requirement ================================================================================================== -->
+
+<form id="contactForm">
+  <div class="container-two">
+    <div class="input-box">
+      <label for="firstname" class="label-form">First Name:</label>
+      <input type="text" id="firstname" placeholder="Firstname" required>
+
+      <label for="lastname" class="label-form">Last Name:</label>
+      <input type="text" id="lastname" placeholder="Lastname" required>
+
+      <label for="email" class="label-form">Email:</label>
+      <input type="email" id="email" placeholder="Email" required>
+
+      <label for="password" class="label-form">Password:</label>
+      <input type="password" id="password" placeholder="Password" required>
+
+      <button type="submit" class="btn-form"><img src="C:/xampp/htdocs/Foundations-Of-Frontend-Web-Development-Lab/ProjectSecond/pictures/images/strijela.png"></button>
+      <p id="message">Password is<span id="strength"></span></p>
+    </div>
+  </div>
+</form>
+
+
+
+
+<!-- Tenth Requirement (View More) ================================================================================================== -->
+
+<div class="read-more-container">
+
+  <div class="container-view-more">
+
+      <p>Project management is a dynamic field that encompasses planning, executing, and closing projects efficiently and effectively. <br>
+         In today's rapidly evolving business landscape, projects serve as the cornerstone of innovation, growth, and adaptation. Whether 
+          it's developing a new product, implementing a system upgrade, or organizing a large-scale event, projects require careful orchestration 
+          to achieve desired outcomes within scope, time, and budget constraints, I love myself and this project and it sucks so much it's bad. <br> <br>
+      <span class="read-more-text">
+          At the heart of every successful project lies a well-defined project plan. This blueprint outlines the project's objectives, deliverables,
+           milestones, timelines, and resource allocations. With clear goals and strategies in place, project managers can steer their teams toward success,
+            navigating through potential obstacles and uncertainties along the way. Communication is paramount in project management, fostering collaboration 
+             and alignment among team members, stakeholders, and sponsors. Regular meetings, progress reports, and feedback sessions keep everyone informed and engaged, 
+              ensuring that the project stays on track and any issues are addressed promptly.
+      </span>
+      </p>
+
+      <span class="read-more-btn">View More</span>
+      <span class="read-more-newpage"><a href="C:\xampp\htdocs\Foundations-Of-Frontend-Web-Development-Lab\ProjectSecond\html\viewmore.html">View Even More</a></span>
+  </div>
+
+  
+</div>
+
+
+
+<!-- Data Driven Content (Ajax,JSON) Sixth Requirement ================================================================================================== -->
+
+    
+
+
+</main>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> <!-- Toastr Implementation -->
+  <script src="https://kit.fontawesome.com/2e1c765023.js" crossorigin="anonymous"></script> <!-- Toastr Icon -->
+  <script src="C:\xampp\htdocs\Foundations-Of-Frontend-Web-Development-Lab\ProjectSecond\assets\js\second-project.js"></script> <!-- My JS Implementation -->
+  <script src="C:\xampp\htdocs\Foundations-Of-Frontend-Web-Development-Lab\ProjectSecond\assets\js\second-project-two.js"></script> <!-- My 2nd JS Implementation -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery Library Implementation -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- jQuery UI Implementation (dodatak za jQ Library) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap Implementation -->
+    
+    
+    
+
+    
+</body>
+</html>

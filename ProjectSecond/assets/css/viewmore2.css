@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  /* From the same CSS ============================================================================================================================================ */
+  
+  body {
+    background-image: url("C:/xampp/htdocs/Foundations-Of-Frontend-Web-Development-Lab/ProjectSecond/pictures/images/backpic.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  
+  /* Nav Bar */
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  /* Header */
+  header {
+    background-color: #00FFFF;
+    color: #2f2f2f;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color:#00FFFF;
+    color: black;
+}
+
+/* New Shit ===================================================================================================================================== */
+
+.h1-first {
+    position: absolute;
+    color: white;
+    left: 8%;
+    top: 20%;
+    font-size: 122px;
+}
+
+hr.style-one {
+    width: 90%;
+    margin-left: 4%;
+    margin-top: 28vh;
+    border: none;
+    height: 2px;
+    background-color: #00FFFF;
+  }
+
+  .p1-new {
+    position: absolute;
+    color: white;
+    left: 11%;
+    top: 40%;
+    line-height: 175%;
+  }

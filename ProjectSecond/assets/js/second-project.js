@@ -1,4 +1,4 @@
-// First
+// First Requirement --------------------------------------------------------------------------------------------------------------------------->
 
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('.image-container img').forEach(image => {
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-// Second Requirement
+// Second Requirement --------------------------------------------------------------------------------------------------------------------------->
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Third Requirement
+// Third Requirement --------------------------------------------------------------------------------------------------------------------------->
 
 document.addEventListener("DOMContentLoaded", function() {
     const fontToggle = document.getElementById('fontToggle');
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Fourth Requirement
+// Fourth Requirement --------------------------------------------------------------------------------------------------------------------------->
 
 document.addEventListener('DOMContentLoaded', function() {
     const accordionHeaders = document.querySelectorAll('.accordion-header');
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-// Eighth Requirement
+// Eighth Requirement --------------------------------------------------------------------------------------------------------------------------->
 
 let toastBox = document.getElementById('toastBox');
 let successMsg = '<i class="fa-solid fa-check-to-slot"></i> Successfully !';
@@ -84,43 +84,62 @@ function showToast(msg) {
 }
 
 
-// Fifth Requirement & Seventh Requirement (7. Not Working)
+// Fifth Requirement --------------------------------------------------------------------------------------------------------------------------->
 
+var pass = document.getElementById("password");
+var msg = document.getElementById("message");
+var str = document.getElementById("strength");
 
+pass.addEventListener('input', () => {
 
-    // Form validation
+    if(pass.value.length > 0) {
+        msg.style.display = "block";
+    }
+    else {
+        msg.style.display = " none";
+    }
+
+    if (pass.value.length < 4) {
+        str.innerHTML = " weak.";
+        pass.style.borderColor = "#ff5925";
+        msg.style.color = "#ff5925";
+    }
+
+    else if(pass.value.length >= 4 && pass.value.length < 8) {
+        str.innerHTML = " medium.";
+        pass.style.borderColor = "orange";
+        msg.style.color = "orange";
+    }
+
+    else if(pass.value.length >= 8) {
+        str.innerHTML = " strong.";
+        pass.style.borderColor = "green";
+        msg.style.color = "green";
+    }
+
+});
+
+    // Form validation -------------------------->>>>>>
     $('#contactForm').validate({
         rules: {
-            name: 'required',
+            firstname: 'required',
+            lastname: 'required',
             email: {
                 required: true,
                 email: true
             },
-            phone: {
-                required: true,
-                minlength: 10,
-                maxlength: 15,
-                digits: true
-            },
-            dob: 'required',
             password: {
                 required: true,
                 minlength: 8
             }
         },
         messages: {
-            name: 'Please enter your name',
+            firstname: 'Please enter your first name',
+            lastname: 'Please enter your last name',
             email: {
                 required: 'Please enter your email',
                 email: 'Please enter a valid email address'
             },
-            phone: {
-                required: 'Please enter a phone number',
-                minlength: 'Phone number must be at least 10 digits',
-                maxlength: 'Phone number cannot exceed 15 digits',
-                digits: 'Please enter only digits'
-            },
-            dob: 'Please select your date of birth',
             password: {
                 required: 'Please enter a password',
                 minlength: 'Password must be at least 8 characters long'
@@ -135,38 +154,32 @@ function showToast(msg) {
             error.css('margin-top', '0.5rem'); // Add some space between input and error message
         },
         submitHandler: function(form) {
-            // Form submission logic
-            console.log('Form submitted');
-            // Reset the form
-            form.reset();
-            // Display success notification
-            alert('Form submission successful!');
+            // AJAX form submission logic
+            $.ajax({
+                type: 'POST',
+                url: 'your-server-endpoint-url',
+                data: $(form).serialize(), // Serialize the form data
+                success: function(response) {
+                    // Reset the form
+                    form.reset();
+                    // Display success notification
+                    $('#successMessage').text('Form submission successful! Data saved.').show();
+                },
+                error: function(xhr, status, error) {
+                    // Handle errors if any
+                    console.error('Error:', error);
+                }
+            });
         }
     });
-    
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent default form submission
-    
-        var formData = new FormData(this); // Create FormData object from form data
-    
-        // Send AJAX request
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "submit.php"); // Replace "submit.php" with your server-side script URL
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status === 200) {
-                    // Request successful
-                    document.getElementById("responseMessage").innerHTML = xhr.responseText;
-                } else {
-                    // Error handling
-                    document.getElementById("responseMessage").innerHTML = "Error: " + xhr.status;
-                }
-            }
-        };
-        xhr.send(formData); // Send form data as the request body
-    });
-    
 
 
+    // Tenth Requirement --------------------------------------------------------------------------------------------------------------------------->
+
+   
     
     
+
+// Data Driven Content REQUIREMENT
+// script.js
+
