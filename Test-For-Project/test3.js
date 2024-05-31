@@ -1,14 +1,27 @@
-const parentContainer = document.querySelector('.read-more-container');
+function fetchData(url) {
+    return fetch(url)
+      .then(response => response.json())
+      .catch(error => console.error('Error fetching data:', error));
+  }
 
-parentContainer.addEventListener('click', event => {
-const current = event.target;
-const isReadMoreBtn = current.className.includes('read-more-btn');
+  // Function to display posts
+  function displayPosts(posts) {
+    var container = document.getElementById('posts-container');
+    posts.forEach(function(post) {
+      var postElement = document.createElement('div');
+      postElement.innerHTML = '<h2>' + post.title + '</h2><p>' + post.content + '</p>';
+      container.appendChild(postElement);
+    });
+  }
 
-if (!isReadMoreBtn) return;
-
-const currentText = current.parentNode.querySelector('.read-more-text');
-
-currentText.classList.toggle('read-more-text--show');
-
-current.textContent = current.textContent.includes('View More') ? "View Less" : "View More";
-});
+  // Fetch and display posts when the page loads
+  window.onload = function() {
+    fetchData('data.json')
+      .then(data => {
+        if (data && data.posts) {
+          displayPosts(data.posts);
+        } else {
+          console.error('Invalid data format:', data);
+        }
+      });
+  };

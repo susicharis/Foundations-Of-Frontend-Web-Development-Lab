@@ -7,7 +7,7 @@
   }
   
   body {
-    background-image: url("C:/xampp/htdocs/Foundations-Of-Frontend-Web-Development-Lab/ProjectSecond/pictures/images/backpic.PNG");
+    background-image: url("../../pictures/images/backpic.PNG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -350,7 +350,7 @@
     padding: 20px;
   }
 
-  .toast {
+  .toast-eight {
     width: 400px;
     height: 80px;
     background: white;
@@ -359,13 +359,13 @@
     box-shadow: 0 0 20px rgba(6, 180, 171, 0.3);
     display: flex;
     align-items: center;
-  }
+}
 
-  .toast i { /* Editing Icons inside */ 
+.toast-eight i { /* Editing Icons inside */ 
     margin: 0 20px;
     font-size: 35px;
     color:#00FFFF;
-  }
+}
 
  
 
@@ -460,6 +460,30 @@ button img {
   
 }
 
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: 425px;
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s, bottom 0.5s;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+  
+}
 
 
 
@@ -516,7 +540,6 @@ button img {
 }
 
 /* Data Driven Content (Ajax,JSON) Requirement =================================================== */
-
 
 
 
@@ -683,7 +706,6 @@ button img {
 
   
  
-
 
 
  

@@ -10,7 +10,7 @@
   /* From the same CSS ============================================================================================================================================ */
   
   body {
-    background-image: url("C:/xampp/htdocs/Foundations-Of-Frontend-Web-Development-Lab/ProjectSecond/pictures/images/backpic.PNG");
+    background-image: url("../../pictures/images/backpic.PNG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
