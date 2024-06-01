@@ -79,3 +79,30 @@ hr.style-one {
     top: 40%;
     line-height: 175%;
   }
+
+
+/* ----------------------- Mobile Responsive -------------------------- */
+/* ----------------------- Mobile Responsive -------------------------- */
+/* ----------------------- Mobile Responsive -------------------------- */
+
+@media only screen and (max-width: 480px) {
+  .h1-first {
+    
+    left: 7%;
+    top: 20%;
+    font-size: 32px;
+}
+
+hr.style-one {
+    margin-top: 14vh;
+  }
+
+  .p1-new {
+    position: absolute;
+    color: white;
+    left: 5%;
+    top: 40%;
+    line-height: 155%;
+    width: 85%;
+  }
+}

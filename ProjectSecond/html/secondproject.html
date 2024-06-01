@@ -8,9 +8,6 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/projectsecond.css"> <!-- CSS Implementation - Both Live Server and Normal -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"> <!-- Toastr Implementation -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> <!-- jQuery CSS -->
-    
-    
-  
 </head>
 
 
@@ -30,12 +27,9 @@
     </nav>
 </header>
 
-
 <!-- Main -->
 <main>
-
  
-    
 <!-- Section One-->
 <section>
         <h2>Hi, my name is</h2>
@@ -59,17 +53,11 @@
 
 <!-- PROJECT 2 UPDATES -->
 
-<!-- Data Driven Content (Ajax,JSON) Sixth Requirement ================================================================================================== -->
-
-<div id="posts-container">
-  <!-- Content will be loaded here -->
-</div>
-
 <!-- First Requirement ================================================================================================== -->
 
 <div class="container">
 
-    <h1>HARKE - Gallery</h1>
+    <h1 class="first-h1">HARKE - Gallery</h1>
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
     <div class="image-container" id="galleryid">
@@ -113,8 +101,6 @@
     
     </div> <!-- image-container -->
 </div> <!-- container -->
-
-
 
 
 
@@ -202,9 +188,6 @@
 <div id="toast" class="toast">Data saved successfully!</div>
 
 
- 
-
-
 <!-- Tenth Requirement (View More) ================================================================================================== -->
 
 <div class="read-more-container">
@@ -233,27 +216,54 @@
 
 
 
+<!-- Sixth Requirement - Data Driven Content (Ajax,JSON)  ================================================================================================== -->
+
+<div id="posts-container">
+  <!-- Content will be loaded here -->
+</div>
 
 
+
+<!-- Eleventh Requirement - Add & Delete ==================================================================================================================== -->
+<h1 class="eleventh-h1">EDIT OR DELETE YOUR EMAIL AND NAME</h1>
+<div id="entity-container">
+  <p class="p-eleven">ID: <span id="entity-id">1</span></p>
+  <p class="p-eleven">NAME: <span id="entity-name">John Doe</span></p>
+  <p class="p-eleven">EMAIL: <span id="entity-email">john.doe@example.com</span></p>
+  <button onclick="editEntity()" class="btn-eleven">Edit</button>
+  <button onclick="deleteEntity()" class="btn-eleven">Delete</button>
+</div>
+
+
+<!-- Additional Requirement - API ======================================================================================================================== -->
+
+    <h1 class="last-h1-fr">API Integration</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button id="getWeatherButton">Get Weather</button>
+    <div id="weatherDisplay"><p class="last-p">You will get information here..</p></div>
 
 
 </main>
 
 
 
+
+
+
+
+
+
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> <!-- Toastr Implementation -->
   <script src="https://kit.fontawesome.com/2e1c765023.js" crossorigin="anonymous"></script> <!-- Toastr Icon -->
 
-  <script src="..\assets\js\second-project.js"></script> <!-- My JS Implementation -->
-  <script src="..\assets\js\second-project-two.js"></script> <!-- My 2nd JS Implementation -->
-  <script src="..\assets\js\second-project-three.js"></script>
+  <script src="../assets/js/second-project.js"></script> <!-- My JS Implementation -->
+  <script src="../assets/js/second-project-two.js"></script> <!-- My 2nd JS Implementation -->
   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery Library Implementation -->
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- jQuery UI Implementation (dodatak za jQ Library) -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap Implementation -->
-    
-    
-
-    
 </body>
 </html>

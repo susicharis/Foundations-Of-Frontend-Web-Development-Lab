@@ -1,4 +1,4 @@
-/* View More - Tenth Requirement --------------------------------------------------------------------------------------------------- */
+/* Tenth Requirement ------------------------------------------------------------------------------------------------------------------ */
 const parentContainer = document.querySelector('.read-more-container');
 
 // Postavljanje kursora na pointer za element sa klasom .read-more-newpage

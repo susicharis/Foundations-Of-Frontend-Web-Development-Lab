@@ -94,7 +94,7 @@
 
 
 
-    /* First Requirement ======================================================================== */
+    /* First Requirement ================================================================================================================================================ */
 
     .container { /* Everything */ 
       position: absolute;
@@ -112,6 +112,12 @@
       text-align: center;      
       width: 20%;
       text-transform: capitalize;
+      
+  }
+
+  .first-h1 {
+    position: absolute;
+    top: 8%;
   }
   
   .container .image-container { /* Div Inside a DIV - image-container */ 
@@ -178,7 +184,7 @@
 
 
 
-  /* Second Requirement ==================================================================== */
+  /* Second Requirement ================================================================================================================================================= */
 
 .content-toggle { /* Div For ALL Of Below */ 
   position: absolute;
@@ -241,7 +247,7 @@
 
 
 
-/* Third Requirement ======================================================================== */
+/* Third Requirement ================================================================================================================================================ */
 
 #fontToggle { /* Button */
   position: absolute;
@@ -275,7 +281,7 @@
 
 
 
-/* Fourth Requirement ======================================================================== */
+/* Fourth Requirement ================================================================================================================================================ */
 
 .accordion { /* What is inside when clicked */
     background-color: #2f2f2f;
@@ -307,7 +313,7 @@
   }
 
 
-  /* Eighth Requirement ======================================================================== */
+  /* Eighth Requirement ================================================================================================================================================ */
 
   .buttons {
     margin: 50px;
@@ -369,7 +375,7 @@
 
  
 
-/* Nineth Requirement ======================================================================== */
+/* Nineth Requirement ================================================================================================================================================ */
 
   nav {
     background-color: #333;
@@ -391,7 +397,7 @@ nav a:hover {
 
 
 
-/* Fifth Requirement ======================================================================== */
+/* Fifth Requirement ================================================================================================================================================ */
 
 .container-two {
   height: 50vh;
@@ -492,7 +498,7 @@ button img {
 
 
 
-/* Tenth Requirement - View More  ============================================================================================== */
+/* Tenth Requirement - View More  ================================================================================================================================================ */
 
 .read-more-container {
   display: flex;
@@ -539,13 +545,175 @@ button img {
   color: #4fbebe;
 }
 
-/* Data Driven Content (Ajax,JSON) Requirement =================================================== */
+/* Data Driven Content (Ajax,JSON) Sixth Requirement ====================================================================================================== */
+
+#posts-container {
+  position: absolute;
+  top: 425%;
+  left: 44%;
+}
+
+#posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  margin: 10px 0; 
+}
+
+.post-title {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #28ae98;
+  text-align: center;
+}
+
+.post-content {
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #000; 
+  color: #fff;
+  padding: 20px; 
+  text-align: center;
+  border: 2px solid #666; 
+}
+
+#post-title-1 {
+  color: rgb(255, 255, 255);
+  top: 100%;
+  left: 0%;
+}
+
+#post-content-1 {
+  color:#00FFFF;
+}
+
+#post-title-2 {
+  color: rgb(248, 248, 248);
+  top: -25%;
+  left: 0%;
+}
+
+#post-content-2 {
+  color: #00FFFF;
+}
+
+/* Eleventh Requirement ========================================================================================================================================================= */
+
+.eleventh-h1 {
+  position: absolute;
+  left: 31%;
+  top: 477%;
+  color: black;
+  background-color:#00FFFF;
+  border: 5px solid black;
+  padding: 10px 16px 10px 16px;
+  border-radius: 8px;
+}
+#entity-container {
+  position: absolute;
+  left: 42.5%;
+  top: 490%;
+}
+
+.p-eleven {
+  color: black;
+  font-size: large;
+  border: 5px solid black;
+  padding: 10px 16px 10px 16px;
+  border-radius: 8px;
+  background-color: #00FFFF;
+}
+
+.btn-eleven {
+  color: black;
+  background-color: #e44757;
+  border: 5px solid black;
+  padding: 10px 16px 10px 16px;
+  border-radius: 8px;
+  margin-left: 15%;
+  margin-top: 2%;
+}
 
 
+/* Additional Requirement - API ========================================================================================== */
+
+#cityInput {
+  padding: 10px;
+  width: 200px;
+  position: absolute;
+  left: 19.3%;
+  top: 85%;
+  border: 3px solid black;
+  border-radius: 8px;
+}
+
+#getWeatherButton {
+  padding: 10px 20px;
+  background: black;
+  color: #00FFFF;
+  border: 2px solid #00FFFF;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  left: 31.3%;
+  top: 85.2%;
+  height: 37px;
+
+}
+
+#getWeatherButton:hover {
+  background: #e9e7e7;
+  color: black;
+  transition: 0.5s ease;
+}
+
+#weatherDisplay {
+  margin-top: 300px;
+  margin-left: 19.3%;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 400px;
+}
+
+.last-h1-fr {
+  color: rgb(10, 10, 10);
+  background-color: #00FFFF;
+  width: 16.5%;
+  padding: 10px 5px 5px 15px;
+  border: 4px solid white;
+  border-radius: 8px;
+  position: absolute;
+  top: 77.5%;
+  left: 19.3%;
+  text-align: center;
+}
+
+.last-p {
+  color: grey;
+}
 
   /* -------------------------------------- MOBILE RESPONSIVE  -------------------------------------------------- */
+  /* -------------------------------------- MOBILE RESPONSIVE  -------------------------------------------------- */
+  /* -------------------------------------- MOBILE RESPONSIVE  -------------------------------------------------- */
+  /* -------------------------------------- MOBILE RESPONSIVE  -------------------------------------------------- */
+  /* -------------------------------------- MOBILE RESPONSIVE  -------------------------------------------------- */
+
+
   @media only screen and (max-width: 480px) {
-    /* Odmah pocetni Naslovi */
+    /* Odmah pocetni Naslovi ------------------------------------------------------------------------------------------------------ */
     h2 {
       position: absolute;
       font-size: 1.5rem;
@@ -574,11 +742,14 @@ button img {
       top: 56%;
       left: 6.7%;
     }
-    /* Toggle Bigger Font */
+    
+    /* Toggle Bigger Font  (? Requirement) ------------------------------------------------------------------------------------------------------ */
     #fontToggle {
       top: 72%;
       left: 6.7%;
     }
+
+    /* First Requirement (Interactive Gallery) ------------------------------------------------------------------------------------------------------ */
     /* First Image - Potkosulja */
     .image-of-me {
       width: 150px;
@@ -657,11 +828,11 @@ button img {
 
 
 
-
+/* Second Requirement ------------------------------------------------------------------------------------------------------ */
 
   .content-toggle { /* Div For ALL Of Below */ 
     position: absolute;
-    top: 240%;
+    top: 260%;
     left: 4%;
   }  
   .second-req-button { /* Button - FAQ */
@@ -679,12 +850,12 @@ button img {
     width: 95%;
   }
   .inside-h2-second {
-    top: 282%;
+    top: 295%;
     left: 3.5%;
     width: 96%;
   }
   .inside-p2 {
-    top: 317%;
+    top: 323%;
     left: 0%;
     width: 95%;
   }
@@ -693,14 +864,14 @@ button img {
 
 
 
-
+/* Fourth Requirement ---------------------------------------------------------------------------------------------------------- */
 
   .accordion { /* What is inside when clicked */
     margin-bottom: 10px;
     width: 70%;
     left: 15%;
     position: absolute;
-    top: 445%;
+    top: 515%;
   }
   
 
@@ -711,15 +882,16 @@ button img {
  
 
 
-/* Forma Nova */
+/* Fifth Requirement (New Form) ----------------------------------------------------------------------------------------------------- */
+
   #contactForm {
     position: absolute;
-    top: 500%;
+    top: 570%;
     left: 5%;
   }
 
 
-/* Toastr, Success i Error messages */
+/* Toastr, Success i Error messages ------------------------------------------------------------------------------- */
   .toastrBut {
     position: absolute;
     left: 4.3%;
@@ -728,20 +900,85 @@ button img {
 
   .toastrBut2 {
     position: absolute;
-    left: 38.3%;
-    top: 78%;
+    left: 4.3%;
+    top: 86%;
   }
 
 
- /* Tenth */
+ /* Tenth Requirement -------------------------------------------------------------------------------------------- */
 
   
   .container-view-more {
     width: 90%;
-    top: 330%;
+    top: 370%;
     left: 5%;
   }
+
+
+
+
+
+
+
+/* Data Driven Content - Sixth Requirement ----------------------------------------------------------------------- */
+
+#posts-container {
+  position: absolute;
+  top: 655%;
+  left: 26%;
+  }
+
+
+
+/* Eleventh Requirement ----------------------------------------------------------------------------------------- */
+
+.eleventh-h1 {
+  left: 0%;
+  top: 727%;
+  }
+
+#entity-container {
+  left: 19.5%;
+  top: 760%;
+  }
+
+
+
+  /* Additional Requirement - API ========================================================================================== */
+
+#cityInput {
+  padding: 5px;
+  width: 150px;
+  left: 39.3%;
+  top: 80%;
+}
+
+#getWeatherButton {
+  padding: 0px 20px;
+  left: 71.3%;
+  top: 80.2%;
+  height: 28px;
+
+}
+
+
+#weatherDisplay {
+  margin-top: 150px;
+  margin-left: 19.3%;
+  width: 56.5%;
+  max-width: 400px;
+  margin-left: 40%;
+}
+
+.last-h1-fr {
+  width: 56.5%;
+  padding: 5px 0px 0px 5px;
+  position: absolute;
+  top: 70.5%;
+  left: 39.3%;
   
-  
+}
 
 } 
+
+

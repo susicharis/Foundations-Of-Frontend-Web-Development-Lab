@@ -83,16 +83,112 @@ function showToast(msg) {
 }
 
 
+// Sixth Requirement --------------------------------------------------------------------------------------------------------------------------->
+
+function fetchData(url) {
+    return fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  }
+  
+  // Function to display posts
+  function displayPosts(posts) {
+    var container = document.getElementById('posts-container');
+    posts.forEach(function(post, index) {
+      var title = post.title ? post.title : 'No Title';
+      var content = post.content ? post.content : 'No Content';
+  
+      var postElement = document.createElement('div');
+      postElement.className = 'post'; // Assign the 'post' class
+  
+      var titleElement = document.createElement('h2');
+      titleElement.id = 'post-title-' + (index + 1); // Assign unique IDs for titles
+      titleElement.className = 'post-title';
+      titleElement.textContent = title;
+  
+      var contentElement = document.createElement('p');
+      contentElement.id = 'post-content-' + (index + 1); // Assign unique IDs for content
+      contentElement.className = 'post-content';
+      contentElement.textContent = content;
+  
+      postElement.appendChild(titleElement);
+      postElement.appendChild(contentElement);
+      container.appendChild(postElement);
+    });
+  }
+  
+  // Fetch and display posts when the page loads
+  window.onload = function() {
+    fetchData('../json/data.json')
+      .then(data => {
+        if (data && data.posts) {
+          displayPosts(data.posts);
+        } else {
+          console.error('Invalid data format:', data);
+        }
+      });
+  };
+
+
+  // Eleventh Requirement --------------------------------------------------------------------------------------------------------------------------->
+
+  function editEntity() {
+    const name = prompt("Enter new name:", document.getElementById('entity-name').textContent);
+    const email = prompt("Enter new email:", document.getElementById('entity-email').textContent);
+    if (name !== null && email !== null) {
+        document.getElementById('entity-name').textContent = name;
+        document.getElementById('entity-email').textContent = email;
+        alert("Entity edited successfully!");
+    } else {
+        alert("Edit canceled.");
+    }
+}
+
+    function deleteEntity() {
+        if (confirm("Are you sure you want to delete this entity?")) {
+            document.getElementById('entity-container').innerHTML = "<p>No entity to display.</p>";
+            alert("Entity deleted successfully!");
+        }
+}
 
 
 
+// Last Requirement - API -------------------------------------------------------------------------------------------------------------------------->
 
-   
+document.getElementById('getWeatherButton').addEventListener('click', getWeather);
 
-   
-    
-    
+async function getWeather() {
+    const apiKey = '16045176b40c1804813a4fec3b222ffb';
+    const city = document.getElementById('cityInput').value;
+    const weatherDiv = document.getElementById('weatherDisplay');
 
+    weatherDiv.innerHTML = 'Loading...';
 
-// script.js
+    try {
+        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
 
+        if (!response.ok) {
+            throw new Error('City not found');
+        }
+
+        const data = await response.json();
+
+        const weather = `
+            <p>City: ${data.name}</p>
+            <p>Temperature: ${data.main.temp}°C</p>
+            <p>Description: ${data.weather[0].description}</p>
+            <p>Humidity: ${data.main.humidity}%</p>
+            <p>Pressure: ${data.main.pressure} hPa</p>
+            <p>Wind Speed: ${data.wind.speed} m/s</p>
+        `;
+
+        weatherDiv.innerHTML = weather;
+    } catch (error) {
+        weatherDiv.innerHTML = `<p style="color: red;">${error.message}</p>`;
+    }
+}
