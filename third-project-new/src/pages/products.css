@@ -1,0 +1,67 @@
+.h1products {
+    color: #eaf60d;
+    font-size: 300%;
+    left: 40%;
+    position: absolute;
+}
+
+/* Pictures */
+
+.imgCigle, .imgBetonski, .imgZeljezo {
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    border: 4px solid #eaf60d;
+    border-radius: 10px;
+} 
+.imgCigle {
+    top: 25%;
+    left: 10%;
+}
+.imgBetonski {
+    top: 25%;
+    left: 36%;
+}
+.imgZeljezo {
+    top: 25%;
+    left: 62%;
+}
+
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+
+/* 480px (mobile) */
+@media only screen and (max-width: 480px) {
+    
+    .h1products {
+        left: 18%;
+        top: 13%;
+    }
+
+    .imgCigle, .imgBetonski, .imgZeljezo {
+        width: 78%;
+        height: 60%;
+    } 
+
+    .imgBetonski {
+        top: 100%;
+        left: 10%;
+    }
+
+    .imgZeljezo {
+        top: 175%;
+        left: 10%;
+    }
+
+}
+
+/*  1024 px (tableti) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    
+    .h1products {
+        left: 35%;
+        top: 12%;
+    }
+
+}

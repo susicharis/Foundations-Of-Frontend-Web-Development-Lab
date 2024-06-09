@@ -1,0 +1,154 @@
+/* paragraphs */
+.p1about, .p1sredina, .p1downfall, .p1redemption {
+    width: 40%;
+    color: white;
+    position: absolute;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+.p1strong {
+    color: #eaf60d;
+}
+.p1about {
+    top: 40%;
+    left: 27%;
+}
+.p1sredina {
+    top: 95%;
+    left: 27%;
+}
+.p1downfall {
+    top: 155%;
+    left: 27%;
+}
+.p1redemption {
+    top: 230%;
+    left: 27%;
+}
+/* end of paragraphs */
+
+/* h1,h2,h3,h4 */
+.h1about, .h1pocetak, .h1sredina, .h1downfall, .h1redemption {
+    color: #eaf60d;
+    position: absolute;
+
+}
+.h1about {
+    left: 37%;
+    font-size: 500%;
+}
+.h1pocetak {
+    left: 38.5%;
+    top: 30%;
+}
+.h1sredina {
+    left: 38.5%;
+    top: 85%;
+}
+.h1downfall {
+    left: 35.5%;
+    top: 145%;
+}
+.h1redemption {
+    left: 33.5%;
+    top: 223%;
+}
+/* end of h1,h2,h3,h4 */
+
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+
+/* 480px (mobile) */
+@media only screen and (max-width: 480px) {
+    
+    .h1about {
+        font-size: 300%;
+        left: 23.5%;
+    }
+    .h1pocetak {
+        font-size: 150%;
+        left: 23%;
+    }
+    .p1about {
+        width: 90%;
+        left: 5%;
+    }
+    .p1sredina {
+        top: 155%;
+        width: 90%;
+        left: 5%;
+    }
+    .p1downfall {
+        top: 265%;
+        left: 5%;
+        width: 90%;
+    }
+    .p1redemption {
+        top: 423%;
+        left: 5%;
+        width: 90%;
+    }
+    .h1sredina {
+        left: 26.5%;
+        top: 145%;
+        font-size: 150%;
+    }
+    .h1downfall {
+        left: 17.5%;
+        top: 255%;
+        font-size: 150%;
+    }
+    .h1redemption {
+        left: 16.5%;
+        top: 413%;
+        font-size: 140%;
+    }
+}
+
+/*  1024 px (tableti) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+    .h1about {
+        font-size: 300%;
+        left: 38.5%;
+    }
+    .h1pocetak {
+        font-size: 150%;
+        left: 38.3%;
+    }
+    .p1about {
+        width: 90%;
+        left: 5%;
+    }
+    .p1sredina {
+        top: 105%;
+        width: 90%;
+        left: 5%;
+    }
+    .p1downfall {
+        top: 165%;
+        left: 5%;
+        width: 90%;
+    }
+    .p1redemption {
+        top: 249%;
+        left: 5%;
+        width: 90%;
+    }
+    .h1sredina {
+        left: 40%;
+        top: 95%;
+        font-size: 150%;
+    }
+    .h1downfall {
+        left: 35.5%;
+        top: 155%;
+        font-size: 150%;
+    }
+    .h1redemption {
+        left: 34.5%;
+        top: 238%;
+        font-size: 140%;
+    }
+}

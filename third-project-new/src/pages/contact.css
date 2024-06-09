@@ -1,0 +1,108 @@
+/* h1,h2,h3,h4 */
+.h1contact {
+    position: absolute;
+    color: #eaf60d;
+    left: 35%;
+    font-size: 500%;
+}
+/* end of h1,h2,h3,h4 */
+
+/* Pictures */
+.firstPic {
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    top: 30%;
+    left: 37%;
+}
+/* end of pictures */
+
+/* paragraphs */
+.p1ig {
+    color: #eaf60d;
+    top: 30%;
+    font-size: 200%;
+    position: absolute;
+    left: 48%;
+}
+/* end for paragraphs */
+
+/* Fifth Requirement ------------------------------------------------ */
+.p1inside {
+    color: #10ea2d;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px; /* Increase padding */
+    text-align: center;
+    position: absolute;
+    top: 80%; /* Adjust vertical position */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 80%; /* Adjust width */
+}
+
+/* Last Requirement ------------------------------------------------- */
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form-input {
+    margin-bottom: 20px;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+ 
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+
+/* 480px (mobile) */
+@media only screen and (max-width: 480px) {
+    
+.h1contact {
+    font-size: 200%;
+    left: 30%;
+}
+.firstPic {
+    width: 30%;
+    height: 30;
+    left: 13%;
+    top: 25%;
+}
+.p1ig {
+    top: 26%;
+    left: 56%;
+    font-size: 120%;
+}
+.buttonContainer {
+    margin-top: 35%;
+    margin-right: 30%;
+}
+}
+
+/*  1024 px (tableti) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    
+    .h1contact {
+        left: 25%;
+    }
+    .firstPic {
+        width: 30%;
+        height: 40%;
+        left: 15%;
+        top: 35%;
+    }
+    .p1ig {
+        top: 39%;
+        left: 60%;
+    }
+    .buttonContainer {
+        margin-top: 20%;
+        margin-right: 15%;
+    }
+}

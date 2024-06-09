@@ -1,0 +1,171 @@
+/* Paragraphs */
+.h1staff {
+    color:#eaf60d;;
+    font-size: 400%;
+    position: absolute;
+    left: 38%;
+ }
+.h1director {
+    color: #eaf60d;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+.h2name {
+    color: #10ea2d;
+    position: absolute;
+    top: 30%;
+    left: 39%;
+    font-size: 400%;
+}
+
+/* Third Requirement ------------------------------------------------- */
+.h2example {
+    color: #eaf60d;
+    position: absolute;
+    top: 60%;
+    left: 34.2%;
+}
+.p1rating {
+    color: #10ea2d;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    font-size: 200%;
+}
+.btnCount {
+    position: absolute;
+    top: 74.1%;
+    left: 40%;
+    padding: 7px 12px 7px 12px;
+    background-color: #10ea2d;
+    border: 1px solid #10ea2d;
+    border-radius: 6px;
+}
+.h3weather {
+    color: #10ea2d;
+    position: absolute;
+    top: -20%;
+    
+    width: 200%;
+    font-size: 300%;
+    left: -36.2%;
+}
+
+/* Fetching data */
+.dataContainer {
+    margin-top: 2em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 15%;
+    background-color: transparent;
+    color: #eaf60d;
+    position: absolute;
+    top: 91%;
+    left: 40%;
+  }
+  .weatherData {
+    margin-top: 1em;
+    font-size: 1.1em;
+    margin: 0.5em 0;
+  }
+  .Error {
+    color: red;
+    font-weight: bold;
+  }
+  
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+
+/* 480px (mobile) */
+@media only screen and (max-width: 480px) {
+    
+    .h1staff {
+        font-size: 200%;
+        left: 30%;
+     }
+    .h1director {
+        
+        left: 35%;
+    }
+    .h2name {
+        font-size:200%;
+        left: 31%;
+    }
+
+    /* Third Requirement ------------------------------------------------- */
+
+.h2example {
+    font-size: 120%;
+    left: 7%;
+    top: 50%;
+}
+.p1rating {
+    top: 55%;
+}
+.btnCount {
+    left: 18%;
+    top: 61.5%;
+}
+.h3weather {
+    font-size: 100%;
+    left: 27%;
+}
+
+/* Fetching data */
+.dataContainer {
+    width: 80%;
+    left: 6%;
+    
+  }
+  .weatherData {
+    text-align: center;
+  }
+}
+
+/*  1024 px (tableti) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    
+    .h1staff {
+        font-size: 200%;
+        left: 40%;
+     }
+    .h1director {
+        
+        left: 42%;
+    }
+    .h2name {
+        font-size:200%;
+        left: 39.5%;
+    }
+
+    /* Third Requirement ------------------------------------------------- */
+
+.h2example {
+    font-size: 120%;
+    left: 27%;
+    top: 50%;
+}
+.p1rating {
+    top: 55%;
+}
+.btnCount {
+    left: 29.5%;
+    top: 61.5%;
+}
+.h3weather {
+    font-size: 100%;
+    left: 37%;
+}
+
+/* Fetching data */
+.dataContainer {
+    width: 80%;
+    left: 6%;
+  }
+  .weatherData {
+    text-align: center;
+  }
+}

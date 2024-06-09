@@ -1,0 +1,64 @@
+/* First Requirement ------------------------------------------------------------------- */
+body {
+    background-image: url(../../../third-project-new/pictures/backpic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+nav {
+    background-color:#eaf60d ; 
+    padding: 20px 40px; 
+  } 
+nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: right; 
+    align-items: center;
+  }
+  
+nav li {
+    margin: 0 15px; 
+  }
+  
+nav a {
+    color: #24272c; 
+    text-decoration: none; 
+    font-size: 16px; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+  }
+  
+nav a:hover {
+    color: #17b622; 
+  }
+
+.NavHR {
+    background-color: black;
+    border: none;
+    height: 2px;
+    position: absolute;
+    top: 5.5%;
+    left: 0%;
+    width: 100%;
+  }
+
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+
+/* 480px (mobile) */
+@media only screen and (max-width: 480px) {   
+  .NavHR {
+    top: 8%;
+  }    
+}
+
+/*  1024 px (tableti) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .NavHR {
+        top: 8%;
+    }
+}

@@ -1,0 +1,516 @@
+
+
+/* Pictures */
+.pritokaFirstPic, .pictureTwo, .majdanImage, .betonaraImage, .kamenicaImage, .slikaZadnja {
+    position: absolute;
+}
+.pictureTwo, .majdanImage, .betonaraImage, .kamenicaImage, .slikaZadnja {
+    border: 1px solid #eaf60d;
+    border-radius: 8px;
+}
+.pritokaFirstPic {
+   height: 70%;
+   width: 100%; 
+   left: 0%;
+   top: 6.5%;
+}
+.pictureTwo {
+    width: 30%;
+    height: 70%;
+    top: 200%;
+    left: 60%;
+}
+.majdanImage {
+    width: 30%;
+    height: 70%;
+    top: 280%;
+    left: 60%;
+}
+.betonaraImage {
+    top: 364%;
+    left: 60%;
+    width: 30%;
+    height: 70%;
+}
+.kamenicaImage {
+    top: 443%;
+    left: 60%;
+    width: 30%;
+    height: 70%;
+}
+.slikaZadnja {
+    top: 525%;
+    left: 60%;
+    width: 30%;
+    height: 70%;
+}
+/* End of Pictures */
+
+/* HR's */
+.homeHR, .findUsHR, .pritokaHR, .majdanHR, .betonaraHR, .kamenicaHR, .izacicHR  {
+    position: absolute;
+    border: none;
+}
+.pritokaHR, .majdanHR, .betonaraHR, .kamenicaHR, .izacicHR  {
+    background-color: #10ea2d;
+    height: 1px;
+}
+.homeHR {
+    top: 75.5%;
+    height: 4px;
+    background-color: #eaf60d;
+    width: 100%;
+}
+.findUsHR {
+    width: 40%;
+    left: 28%;
+    top: 186%;
+    background-color: #eaf60d;
+    height: 2px;
+}
+.pritokaHR {
+    width: 28%;
+    top: 213%;
+    left: 10.2%;
+    
+}
+.majdanHR {
+    width: 28%;
+    top: 292%;
+    left: 9.5%;
+}
+.betonaraHR {
+    width: 36%;
+    top: 376%;
+    left: 5.7%;    
+}
+.kamenicaHR {
+    width: 34%;
+    top: 455%;
+    left: 6.7%;      
+}
+.izacicHR {
+    width: 24%;
+    top: 538%;
+    left: 10.7%; 
+}
+/* End of HR's */
+
+
+/* h1,h2,h3,h4 */
+.h1home, .h2home, .h3home, .h1pritoka, .h2majdan, .h2betonara, .h2kamenica, .h2izacic {
+    position: absolute;
+}
+.h1home, .h2home, .h3home {
+    color: #eaf60d;
+}
+.h1pritoka, .h2majdan, .h2betonara, .h2kamenica, .h2izacic {
+    font-size: 450%;
+    color: #10ea2d;
+}
+.h1home {
+    top: 27%;
+    left: 36%;
+    font-size: 580%;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid #eaf60d;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+}
+.h2home {
+    top: 90%;
+    left: 35%;
+    font-size: 580%;
+}
+.h3home {
+    top: 170%;
+    left: 28%;
+    font-size: 440%; 
+}
+.h1pritoka {
+    top: 199%;
+    left: 12%;
+}
+.h2majdan {
+    top: 276%;
+    left: 12%; 
+}
+.h2betonara {
+    top: 360%;
+    left: 6%;
+}
+.h2kamenica { 
+    top: 440%;
+    left: 9%; 
+}
+.h2izacic {
+    top: 523%;
+    left: 12%;
+}
+/* end of h1,h2,h3,h4 */
+
+
+/* Paragraphs */
+.p1home, .p1pritoka, .p1majdan, .p1betonara, .p1kamenica, .p1izacic {
+    position: absolute;
+    color: white;
+    text-align: justify;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 2px;
+}
+.p1pritoka, .p1majdan, .p1betonara, .p1kamenica, .p1izacic{
+    width: 35%;
+    left: 6%;
+    border: 1px solid #10ea2d;
+}
+.p1home {
+    top: 117%;
+    width: 45%;
+    left: 26%;
+    border: 1px solid #eaf60d;
+    border-radius: 10px;   
+}
+.p1pritoka {
+    top: 217%;
+}
+.p1strong {
+    color: #10ea2d;
+}
+.p1majdan {
+    top: 296%;
+}
+.p1betonara {
+    top: 378%;
+}
+.p1kamenica {
+    top: 460%;
+}
+.p1izacic {
+    top: 540%;
+}
+/* End of paragraphs */
+
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------ MOBILE, TABLET, DESKTOP RESPONSIVE ---------------------------------------------------------------------------------*/
+
+/* 480px (mobile) */
+@media only screen and (max-width: 480px) {    
+    .h1home {
+        width: 55%;
+        left: 17%;
+        font-size: 300%;
+        padding-left: 20px;
+    }
+    .pritokaFirstPic {
+        top: 9.8%;
+        height: 67%;
+    }
+    .h2home {
+        font-size: 270%;
+        left: 22%;
+        top: 80%;
+    }
+    .p1home {
+        top: 96%;
+        width: 80%;
+        left: 7%;
+    }
+    .h3home {
+        font-size: 200%;
+        left: 12%;
+        top: 210%;
+    }
+    .findUsHR {
+        top: 220%;
+        left: 11.5%;
+        width: 75%;
+    }
+
+    /* Together */
+    .pictureTwo, .majdanImage, .betonaraImage, .kamenicaImage, .slikaZadnja {
+        width: 70%;
+        left: 13.5%;
+    }
+
+    /* Pritoka */
+    .h1pritoka {
+        top: 220%;
+        font-size: 185%;
+        left: 27%;
+    }
+    .p1pritoka {
+        top: 284%;
+        height: 81%;
+        font-size: 70%;
+        width: 66%;
+        left: 13%;
+    }
+    .pritokaHR {
+        top: 228%;
+        width: 40%;
+        left: 27%;
+    }
+    .pictureTwo {
+        height: 50%;
+        top: 232%;
+    }
+
+    /* Majdan */
+    .majdanImage {
+        top: 386%;
+        height: 50%;
+    }
+    .p1majdan {
+        top: 440%;
+        height: 83%;
+        font-size: 70%;
+        width: 66%;
+        left: 13%;
+    }
+    .h2majdan {
+        top: 370%;
+        font-size: 200%;
+        left: 26.5%;
+    }
+    .majdanHR {
+        top: 380%;
+        left: 26%;
+        width: 43%;
+    }
+
+    /* Betonara */
+    .betonaraImage {
+        top: 540%;
+        height: 50%;
+    }
+    .h2betonara {
+        top: 525%;
+        font-size: 200%;
+        left: 17%;
+    }
+    .betonaraHR {
+        top: 535%;
+        width: 70%;
+        left: 13%;
+    }
+    .p1betonara {
+        top: 592%;
+        height: 78%;
+        font-size: 70%;
+        width: 66%;
+        left: 13%;
+    }
+
+    /* Kamenica */
+    .h2kamenica {
+        top: 675%;
+        font-size: 200%;
+        left: 21.5%;
+    }
+    .kamenicaHR {
+        top: 685%;
+        left: 19%;
+        width: 57%;
+    }
+    .kamenicaImage {
+        top: 690%;
+        height: 70%;
+    }
+    .p1kamenica {
+        top: 762%;
+        height: 75%;
+        font-size: 70%;
+        width: 66%;
+        left: 13%;
+    }
+
+    /* Izacic */
+    .izacicHR {
+        top: 850%;
+        left: 28%;
+        width: 42%;
+    }
+    .p1izacic {
+        top: 910%;
+        height: 66%;
+        font-size: 70%;
+        width: 66%;
+        left: 13%;
+
+    }
+    .slikaZadnja {
+        top: 855%;
+        height: 50%;
+
+    }
+    .h2izacic {
+        top: 840%;
+        font-size: 200%;
+        left: 30%;
+    }
+}
+
+/*  1024 px (tableti) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    
+    .h1home {
+        width: 25%;
+        left: 35%;
+        font-size: 300%;
+        padding-left: 20px;
+    }
+    .pritokaFirstPic {
+        top: 9.8%;
+        height: 67%;
+    }
+    .h2home {
+        font-size: 270%;
+        left: 36%;
+        top: 80%;
+    }
+    .p1home {
+        top: 96%;
+        width: 80%;
+        left: 8.5%;
+    }
+    .h3home {
+        font-size: 200%;
+        left: 32%;
+        top: 152%;
+    }
+    .findUsHR {
+        top: 162%;
+        left: 31.5%;
+        width: 35%;
+    }
+
+    /* Together */
+    .pictureTwo, .majdanImage, .betonaraImage, .kamenicaImage, .slikaZadnja {
+        width: 70%;
+        left: 13.5%;
+    }
+
+    /* Pritoka */
+    .h1pritoka {
+        top: 168%;
+        font-size: 185%;
+        left: 38.5%;
+    }
+    .p1pritoka {
+        top: 234%;
+        height: 36%;
+        font-size: 70%;
+        width: 68.3%;
+        left: 13%;
+    }
+    .pritokaHR {
+        top: 176%;
+        width: 22%;
+        left: 37%;
+    }
+    .pictureTwo {
+        height: 50%;
+        top: 180.5%;
+    }
+
+    /* Majdan */
+    .majdanImage {
+        top: 290%;
+        height: 50%;
+    }
+    .p1majdan {
+        top: 342%;
+        height: 38%;
+        font-size: 70%;
+        width: 68.5%;
+        left: 13%;
+    }
+    .h2majdan {
+        top: 275%;
+        font-size: 200%;
+        left: 38.5%;
+    }
+    .majdanHR {
+        top: 285%;
+        left: 36%;
+        width: 23%;
+    }
+
+    /* Betonara */
+    .betonaraImage {
+        top: 400%;
+        height: 70%;
+    }
+    .h2betonara {
+        top: 385%;
+        font-size: 200%;
+        left: 35%;
+    }
+    .betonaraHR {
+        top: 395%;
+        width: 30%;
+        left: 34.5%;
+    }
+    .p1betonara {
+        top: 472%;
+        height: 32.5%;
+        font-size: 70%;
+        width: 68.5%;
+        left: 13%;
+    }
+
+    /* Kamenica */
+    .h2kamenica {
+        top: 510%;
+        font-size: 200%;
+        left: 35.5%;
+    }
+    .kamenicaHR {
+        top: 520%;
+        left: 34%;
+        width: 27%;
+    }
+    .kamenicaImage {
+        top: 525%;
+        height: 70%;
+    }
+    .p1kamenica {
+        top: 598%;
+        height: 32.5%;
+        font-size: 70%;
+        width: 68%;
+        left: 13%;
+    }
+
+    /* Izacic */
+    .izacicHR {
+        top: 645%;
+        left: 39%;
+        width: 20%;
+    }
+    .p1izacic {
+        top: 702%;
+        height: 30%;
+        font-size: 70%;
+        width: 68%;
+        left: 13%;
+
+    }
+    .slikaZadnja {
+        top: 650%;
+        height: 50%;
+
+    }
+    .h2izacic {
+        top: 635%;
+        font-size: 200%;
+        left: 40%;
+    }
+    
+
+}
+
